@@ -17,7 +17,7 @@
 ## About Me
 
 - 🎓 Studying **Data Science & AI** at **FGV**
-- 🧠 Member of **NES** (Núcleo de Estudos em Sistemas), working on AI, Neural Networks, Linear Algebra & Calculus
+- 🧠 Alum of **NES** (Novo Ensino Suplementar) — a free academic-excellence extension program for top-performing high schoolers, where I studied AI, Neural Networks, Linear Algebra & Calculus before university
 - 🏆 **OBMEP** (Silver National / Gold Regional) and **OAM** (Silver) academic medals
 - 🌍 Exchange student alumnus — *"Daqui Pra o Mundo"* program (England)
 - 🗣️ Fluent in English (C1 certified) and Portuguese
