@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt" class="scroll-smooth">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Neves | Portfolio</title>
+    <title>Pedro Neves — Desenvolvedor Full-Stack & Dados</title>
     <meta name="description"
-        content="Portfolio of Pedro Neves, a Young Developer specializing in Web Development, AI, and Data Analysis.">
+        content="Pedro Neves — estudante de Ciência de Dados & IA na FGV. Construo software Django em produção real: plataformas acadêmicas, sistemas de biblioteca, IA aplicada.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="CSS/style.css">
 
     <script>
@@ -31,13 +24,18 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
-                        heading: ['Outfit', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
                     },
                     colors: {
-                        primary: '#6366f1',   /* Indigo 500 */
-                        secondary: '#ec4899', /* Pink 500 */
-                        accent: '#8b5cf6',    /* Violet 500 */
-                        dark: '#0f172a',      /* Slate 900 */
+                        bg: '#08090c',
+                        surface: '#111319',
+                        surface2: '#161922',
+                        primary: '#c6ff4d',
+                        secondary: '#7c9cff',
+                        amber: '#ffb454',
+                        muted: '#99a1ae',
+                        faint: '#5c6270',
                     }
                 }
             }
@@ -45,100 +43,45 @@
     </script>
 </head>
 
-<body
-    class="bg-dark text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
-
-    <!-- Background Elements -->
-    <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-        <div
-            class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-600/20 rounded-full blur-[120px] animate-float">
-        </div>
-        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-fuchsia-600/20 rounded-full blur-[120px] animate-float"
-            style="animation-delay: -3s;"></div>
-        <div
-            class="absolute top-[40%] left-[40%] w-[20%] h-[20%] bg-blue-600/10 rounded-full blur-[100px] animate-pulse">
-        </div>
-        <div class="mesh-gradient absolute inset-0 opacity-30"></div>
-    </div>
+<body class="bg-bg text-slate-100 font-sans antialiased">
 
     <!-- Navigation -->
     <nav class="fixed w-full z-50 top-0 transition-all duration-300 p-4" id="navbar">
-        <div class="glass rounded-2xl container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold font-heading tracking-tight group">
-                <span
-                    class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-fuchsia-400 group-hover:to-indigo-400 transition-all duration-500">Pedro
-                    Neves</span>
+        <div class="glass rounded-2xl container mx-auto max-w-6xl px-5 py-3 flex justify-between items-center transition-colors duration-300">
+            <a href="#inicio" class="flex items-center gap-2 group">
+                <span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_#c6ff4d]"></span>
+                <span class="text-lg font-bold font-heading tracking-tight">Pedro Neves</span>
             </a>
 
-            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
-                <a href="#inicio" class="nav-link text-sm font-medium hover:text-white transition-colors relative group"
-                    key-language="home-nav">
-                    Início
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#sobre" class="nav-link text-sm font-medium hover:text-white transition-colors relative group"
-                    key-language="about-nav">
-                    Sobre Mim
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#habilidades"
-                    class="nav-link text-sm font-medium hover:text-white transition-colors relative group"
-                    key-language="skills-nav">
-                    Habilidades
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#projetos"
-                    class="nav-link text-sm font-medium hover:text-white transition-colors relative group"
-                    key-language="projects-nav">
-                    Projetos
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#educacao"
-                    class="nav-link text-sm font-medium hover:text-white transition-colors relative group"
-                    key-language="certificates-nav">
-                    Educação
-                    <span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                <a href="#inicio" class="nav-link text-sm font-medium" key-language="home-nav">Início</a>
+                <a href="#sobre" class="nav-link text-sm font-medium" key-language="about-nav">Sobre</a>
+                <a href="#projetos" class="nav-link text-sm font-medium" key-language="projects-nav">Projetos</a>
+                <a href="#habilidades" class="nav-link text-sm font-medium" key-language="skills-nav">Habilidades</a>
+                <a href="#trajetoria" class="nav-link text-sm font-medium" key-language="path-nav">Trajetória</a>
                 <a href="#contato"
-                    class="px-5 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition-all duration-300 text-sm font-medium"
-                    key-language="contact-nav">
+                    class="btn-ghost !py-2 !px-4 text-sm magnetic" key-language="contact-nav">
                     Contato
                 </a>
-
-                <!-- Language Toggle -->
                 <div class="language-toggle" id="language-toggle">
                     <div class="lang-option active" data-lang="pt">PT</div>
                     <div class="lang-option" data-lang="en">EN</div>
                 </div>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
-                <i class="fas fa-bars text-2xl"></i>
+            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button" aria-label="Menu">
+                <i class="fas fa-bars text-xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu -->
         <div class="md:hidden hidden absolute top-20 left-4 right-4 glass rounded-2xl p-6 flex flex-col gap-4"
             id="mobile-menu">
-            <a href="#inicio" class="text-center py-2 hover:bg-white/5 rounded-lg transition"
-                key-language="home-mobile-nav">Início</a>
-            <a href="#sobre" class="text-center py-2 hover:bg-white/5 rounded-lg transition"
-                key-language="about-mobile-nav">Sobre Mim</a>
-            <a href="#habilidades" class="text-center py-2 hover:bg-white/5 rounded-lg transition"
-                key-language="skills-mobile-nav">Habilidades</a>
-            <a href="#projetos" class="text-center py-2 hover:bg-white/5 rounded-lg transition"
-                key-language="projects-mobile-nav">Projetos</a>
-            <a href="#educacao" class="text-center py-2 hover:bg-white/5 rounded-lg transition"
-                key-language="certificates-mobile-nav">Educação</a>
-            <a href="#contato" class="text-center py-2 hover:bg-white/5 rounded-lg transition"
-                key-language="contact-mobile-nav">Contato</a>
+            <a href="#inicio" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="home-mobile-nav">Início</a>
+            <a href="#sobre" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="about-mobile-nav">Sobre</a>
+            <a href="#projetos" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="projects-mobile-nav">Projetos</a>
+            <a href="#habilidades" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="skills-mobile-nav">Habilidades</a>
+            <a href="#trajetoria" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="path-mobile-nav">Trajetória</a>
+            <a href="#contato" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="contact-mobile-nav">Contato</a>
             <div class="flex justify-center mt-2">
                 <div class="language-toggle" id="language-toggle-mobile">
                     <div class="lang-option active" data-lang="pt">PT</div>
@@ -148,835 +91,612 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="inicio" class="min-h-screen flex items-center justify-center relative pt-20">
-        <div class="container mx-auto px-6 text-center z-10">
-            <div
-                class="inline-block mb-4 px-4 py-1.5 rounded-full glass border border-indigo-500/30 text-indigo-300 text-sm font-medium animate-fade-in-down">
-                👋 Bem-vindo ao meu portfólio
+    <!-- Hero -->
+    <header id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-20">
+        <canvas id="network-canvas" class="absolute inset-0 w-full h-full opacity-70"></canvas>
+        <div class="bg-grid absolute inset-0 w-full h-full pointer-events-none"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-bg/40 to-bg pointer-events-none"></div>
+
+        <div class="container mx-auto max-w-4xl px-6 text-center relative z-10">
+            <div class="pill mx-auto mb-7" data-reveal>
+                <span class="pill-dot animate-pulse"></span>
+                <span key-language="hero-eyebrow">Disponível para estágio / vaga júnior</span>
             </div>
-            <h1 class="text-5xl md:text-7xl font-bold font-heading mb-6 leading-tight animate-fade-in-up">
-                Olá, sou <br>
-                <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-fuchsia-400 to-blue-400 animate-gradient">Pedro
-                    Neves</span>
+
+            <h1 class="text-5xl md:text-7xl font-bold font-heading mb-5 leading-[1.05]" data-reveal data-reveal-delay="80">
+                Pedro Neves
             </h1>
-            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-2xl mx-auto font-light animate-fade-in-up"
-                style="animation-delay: 0.2s;" key-language="hero-subtitle">
-                Um <span class="font-semibold text-indigo-300">Jovem Desenvolvedor</span> transformando ideias em
-                inovação digital.
+
+            <p class="text-2xl md:text-3xl font-heading font-medium text-slate-100 mb-6 leading-snug" data-reveal data-reveal-delay="140"
+                key-language="hero-headline">
+                Construo software que <span class="text-gradient">pessoas de verdade usam</span>.
             </p>
 
-            <div class="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up" style="animation-delay: 0.4s;">
-                <span
-                    class="px-4 py-2 rounded-lg glass border border-white/5 text-sm text-slate-300 hover:border-indigo-500/50 transition-colors duration-300">
-                    <i class="fas fa-code text-indigo-400 mr-2"></i>Web Dev
-                </span>
-                <span
-                    class="px-4 py-2 rounded-lg glass border border-white/5 text-sm text-slate-300 hover:border-fuchsia-500/50 transition-colors duration-300">
-                    <i class="fas fa-brain text-fuchsia-400 mr-2"></i>AI & ML
-                </span>
-                <span
-                    class="px-4 py-2 rounded-lg glass border border-white/5 text-sm text-slate-300 hover:border-blue-500/50 transition-colors duration-300">
-                    <i class="fas fa-chart-bar text-blue-400 mr-2"></i>Data Analysis
-                </span>
+            <p class="text-base md:text-lg text-muted mb-10 max-w-2xl mx-auto leading-relaxed" data-reveal data-reveal-delay="200"
+                key-language="hero-subtitle">
+                Estudante de Ciência de Dados & IA na FGV. Já coloquei um sistema em produção real numa
+                escola e hoje contribuo com a plataforma acadêmica de um laboratório universitário —
+                sempre da modelagem de dados ao deploy, testado e documentado.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-3 mb-10 font-mono text-xs" data-reveal data-reveal-delay="260">
+                <span class="pill"><i class="fas fa-cubes text-primary"></i> <span class="stat-value" data-count="6">0</span>&nbsp;<span key-language="stat-apps">apps Django</span></span>
+                <span class="pill"><i class="fas fa-vial text-primary"></i> <span class="stat-value" data-count="257">0</span>&nbsp;<span key-language="stat-tests">testes automatizados</span></span>
+                <span class="pill"><i class="fas fa-code-branch text-primary"></i> <span class="stat-value" data-count="49">0</span>&nbsp;<span key-language="stat-commits">commits pessoais</span></span>
+                <span class="pill"><i class="fas fa-users text-primary"></i> <span class="stat-value" data-count="3">0</span>&nbsp;<span key-language="stat-platforms">plataformas reais</span></span>
             </div>
 
-            <div class="flex justify-center gap-6 animate-fade-in-up" style="animation-delay: 0.6s;">
-                <a href="https://github.com/PedroVNeves" target="_blank"
-                    class="w-12 h-12 flex items-center justify-center rounded-full glass hover:bg-white/10 hover:scale-110 transition-all duration-300 border border-white/10">
-                    <i class="fab fa-github text-xl"></i>
+            <div class="flex flex-wrap justify-center gap-4 mb-12" data-reveal data-reveal-delay="320">
+                <a href="#projetos" class="btn-primary magnetic">
+                    <span key-language="hero-cta-projects">Ver projetos</span> <i class="fas fa-arrow-right text-xs"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank"
-                    class="w-12 h-12 flex items-center justify-center rounded-full glass hover:bg-blue-600/20 hover:scale-110 transition-all duration-300 border border-white/10">
-                    <i class="fab fa-linkedin-in text-xl text-blue-400"></i>
+                <a href="#contato" class="btn-ghost magnetic">
+                    <span key-language="hero-cta-contact">Falar comigo</span>
                 </a>
-                <a href="mailto:pedro.vasconcelosneves@gmail.com" target="_blank"
-                    class="w-12 h-12 flex items-center justify-center rounded-full glass hover:bg-indigo-600/20 hover:scale-110 transition-all duration-300 border border-white/10">
-                    <i class="fas fa-envelope text-xl text-indigo-400"></i>
+            </div>
+
+            <div class="flex justify-center gap-4" data-reveal data-reveal-delay="380">
+                <a href="https://github.com/PedroVNeves" target="_blank" rel="noopener"
+                    class="w-11 h-11 flex items-center justify-center rounded-full glass hover:border-primary/40 transition-colors">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank" rel="noopener"
+                    class="w-11 h-11 flex items-center justify-center rounded-full glass hover:border-primary/40 transition-colors">
+                    <i class="fab fa-linkedin-in text-secondary"></i>
+                </a>
+                <a href="mailto:pedro.vasconcelosneves@gmail.com"
+                    class="w-11 h-11 flex items-center justify-center rounded-full glass hover:border-primary/40 transition-colors">
+                    <i class="fas fa-envelope text-amber"></i>
                 </a>
             </div>
         </div>
 
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float cursor-pointer text-faint hover:text-primary transition-colors"
             id="scroll-down-button">
-            <i class="fas fa-chevron-down text-slate-500 text-2xl hover:text-white transition-colors"></i>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="sobre" class="py-32 relative">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-16">
-                <!-- Image -->
-                <div class="w-full md:w-1/3 flex justify-center" data-aos="fade-right">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full blur-2xl opacity-50 animate-pulse">
-                        </div>
-                        <img src="assets/profile.png" alt="Pedro Neves"
-                            class="relative w-full h-full object-cover rounded-full border-4 border-white/10 shadow-2xl z-10">
-                        <div class="absolute -bottom-4 -right-4 glass px-4 py-2 rounded-xl border border-white/20 z-20 animate-float"
-                            style="animation-delay: 1s;">
-                            <span class="text-sm font-bold">🚀 18 Anos</span>
+    <main>
+        <!-- About -->
+        <section id="sobre" class="py-28 md:py-36 relative">
+            <div class="container mx-auto max-w-6xl px-6">
+                <div class="flex flex-col md:flex-row items-start gap-16">
+                    <div class="w-full md:w-1/3 flex justify-center md:sticky md:top-32" data-reveal="left">
+                        <div class="relative w-60 h-60 md:w-72 md:h-72">
+                            <div class="absolute -inset-3 rounded-[2rem] border border-primary/20"></div>
+                            <img src="assets/profile.png" alt="Pedro Neves"
+                                class="relative w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                            <div class="absolute -bottom-4 -right-4 glass px-4 py-2 rounded-xl animate-float" style="animation-delay:1s;">
+                                <span class="text-xs font-mono font-semibold" key-language="about-badge">🎓 FGV — Dados & IA</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Content -->
-                <div class="w-full md:w-2/3" data-aos="fade-left">
-                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 flex items-center gap-4"
-                        key-language="about-title">
-                        Sobre Mim <div class="h-1 w-20 bg-indigo-500 rounded-full"></div>
-                    </h2>
+                    <div class="w-full md:w-2/3">
+                        <span class="section-label" data-reveal>// sobre-mim</span>
+                        <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-8" data-reveal
+                            key-language="about-title">Sobre mim</h2>
 
-                    <div class="glass-card p-8 rounded-3xl space-y-6 text-slate-300 leading-relaxed">
-                        <p key-language="about-p1">
-                            Sou um jovem de 18 anos, apaixonado por tecnologia e inovação, com uma jornada de
-                            aprendizado contínuo no NES. Atualmente, estou finalizando o terceiro ano do ensino médio e
-                            sempre buscando aplicar o conhecimento em projetos práticos.
-                        </p>
-                        <p key-language="about-p2">
-                            Minha experiência inclui o desenvolvimento de landing pages para projetos como o
-                            SigmaChallenge, demonstrando minha habilidade em criar interfaces web eficazes. Tenho um
-                            forte interesse em Inteligência Artificial, onde já desenvolvi um modelo que detecta emoções
-                            usando OpenCV.
-                        </p>
-                        <p key-language="about-p3">
-                            Sou um entusiasta de competições acadêmicas, sendo medalhista da OBMEP e da OAM. Fui
-                            aprovado no prestigioso programa "Daqui Pra o Mundo", que me proporcionou um intercâmbio na
-                            Inglaterra.
-                        </p>
+                        <div class="space-y-5 text-slate-300 leading-relaxed text-base md:text-lg" data-reveal data-reveal-delay="100">
+                            <p key-language="about-p1">
+                                Tenho 18 anos e uma obsessão simples: pegar um problema real e ver ele funcionando em
+                                produção — não só numa branch local. Estudo Ciência de Dados & Inteligência
+                                Artificial na FGV, e venho de uma trajetória de olimpíadas de matemática que moldou
+                                como eu penso: de trás pra frente, a partir do resultado que precisa existir.
+                            </p>
+                            <p key-language="about-p2">
+                                No <strong class="text-white">LED-UFAL</strong> (laboratório de pesquisa da UFAL), sou
+                                um dos principais contribuidores da <strong class="text-white">PETI 2027</strong> —
+                                uma plataforma Django full-stack com controle de acesso em duas camadas,
+                                provisionamento automático de aulas e 257 testes automatizados, construída em equipe
+                                com outras 5 pessoas. Construí também, sozinho e de graça, o sistema de biblioteca
+                                que hoje roda em produção na minha antiga escola.
+                            </p>
+                            <p key-language="about-p3">
+                                Fora do código: medalhista da <strong class="text-white">OBMEP</strong> e da
+                                <strong class="text-white">OAM</strong>, intercambista pelo programa "Daqui Pra o
+                                Mundo" na Inglaterra, e fluente em inglês (C1). Gosto de times pequenos, decisões
+                                documentadas, e código que qualquer pessoa consegue entender seis meses depois.
+                            </p>
+                        </div>
 
-                        <div class="pt-4">
-                            <a href="#contato"
-                                class="inline-flex items-center gap-2 text-indigo-400 font-semibold hover:text-indigo-300 transition-colors group">
-                                Vamos conversar <i
-                                    class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
-                            </a>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10" data-reveal data-reveal-delay="180">
+                            <div class="pill justify-center !text-slate-300"><i class="fas fa-rocket text-primary"></i> <span key-language="value-ship">Ship em produção</span></div>
+                            <div class="pill justify-center !text-slate-300"><i class="fas fa-vial text-primary"></i> <span key-language="value-test">Testo o que escrevo</span></div>
+                            <div class="pill justify-center !text-slate-300"><i class="fas fa-file-lines text-primary"></i> <span key-language="value-docs">Documento decisões</span></div>
+                            <div class="pill justify-center !text-slate-300"><i class="fas fa-people-group text-primary"></i> <span key-language="value-team">Trabalho bem em equipe</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="habilidades" class="py-32 relative overflow-hidden">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" key-language="skills-title">Minhas
-                    Habilidades</h2>
-                <div class="w-24 h-1 bg-fuchsia-500 mx-auto rounded-full"></div>
-            </div>
+        <!-- Projects -->
+        <section id="projetos" class="py-28 md:py-36 relative bg-surface/20">
+            <div class="container mx-auto max-w-6xl px-6">
+                <div class="text-center mb-16" data-reveal>
+                    <span class="section-label">// projetos</span>
+                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="projects-title">
+                        Projetos em destaque</h2>
+                    <p class="text-muted max-w-xl mx-auto" key-language="projects-subtitle">
+                        Dois projetos que saíram da branch e viraram software que alguém realmente usa.
+                    </p>
+                </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Technical Skills -->
-                <div class="glass-card p-8 rounded-3xl" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
-                        key-language="skills-technical-title">
-                        <i class="fas fa-laptop-code text-indigo-400"></i> Hard Skills
-                    </h3>
-
-                    <div class="space-y-8">
-                        <!-- Python/JS -->
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-slate-300"
-                                    key-language="skill-programming-languages">Linguagens (Python, Java)</span>
-                                <span class="text-indigo-400">90%</span>
+                <!-- Featured: PETI 2027 -->
+                <div class="card card-tilt p-7 md:p-10 mb-8" data-reveal="scale">
+                    <div class="flex flex-col lg:flex-row gap-10">
+                        <div class="lg:w-7/12">
+                            <div class="flex flex-wrap items-center gap-2 mb-5">
+                                <span class="pill !text-amber !border-amber/30"><i class="fas fa-lock text-[10px]"></i> <span key-language="peti-tag-private">Repositório privado</span></span>
+                                <span class="pill"><i class="fas fa-building-columns text-[10px]"></i> LED-UFAL</span>
+                                <span class="pill"><i class="fas fa-code-branch text-[10px]"></i> <span key-language="peti-tag-active">Em desenvolvimento ativo</span></span>
                             </div>
-                            <div class="h-2 bg-dark/50 rounded-full overflow-hidden">
-                                <div
-                                    class="h-full bg-gradient-to-r from-indigo-500 to-blue-500 w-[90%] rounded-full relative">
-                                    <div class="absolute inset-0 bg-white/20 animate-pulse"></div>
-                                </div>
+                            <h3 class="text-2xl md:text-3xl font-bold font-heading text-white mb-4">PETI 2027</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6" key-language="peti-description">
+                                Plataforma Django que orquestra as trilhas anuais do PETI — o programa que forma
+                                estudantes brasileiros para olimpíadas de matemática. Meu trabalho: modelagem de
+                                dados relacional, sistema de autorização de duas camadas (papel × escopo), motor de
+                                provisionamento automático de aulas e semanas, e a suíte de testes que garante que
+                                nada disso quebra silenciosamente.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Python</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Django</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">RBAC</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">TDD</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">SQL</span>
                             </div>
+                            <p class="text-xs text-faint font-mono" key-language="peti-note">
+                                Código do laboratório não é público — os números abaixo são reais, direto do histórico do git.
+                            </p>
                         </div>
 
-                        <!-- Web Dev -->
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-slate-300"
-                                    key-language="skill-web-development">Desenvolvimento Web</span>
-                                <span class="text-fuchsia-400">85%</span>
+                        <div class="lg:w-5/12 grid grid-cols-2 gap-3">
+                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
+                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="6">0</span></p>
+                                <p class="text-xs text-muted mt-1" key-language="peti-stat-apps">apps Django modulares</p>
                             </div>
-                            <div class="h-2 bg-dark/50 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-fuchsia-500 to-pink-500 w-[85%] rounded-full">
-                                </div>
+                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
+                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="257">0</span></p>
+                                <p class="text-xs text-muted mt-1" key-language="peti-stat-tests">testes automatizados</p>
                             </div>
-                        </div>
-
-                        <!-- AI/ML -->
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-slate-300" key-language="skill-ai-ml">IA & Machine
-                                    Learning</span>
-                                <span class="text-emerald-400">75%</span>
+                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
+                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="49">0</span></p>
+                                <p class="text-xs text-muted mt-1" key-language="peti-stat-commits">commits pessoais</p>
                             </div>
-                            <div class="h-2 bg-dark/50 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 w-[75%] rounded-full">
-                                </div>
+                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
+                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="6">0</span></p>
+                                <p class="text-xs text-muted mt-1" key-language="peti-stat-team">pessoas na equipe</p>
                             </div>
-                        </div>
-
-                        <!-- Data Analysis -->
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-slate-300" key-language="skill-data-analysis">Análise de
-                                    Dados</span>
-                                <span class="text-amber-400">80%</span>
+                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
+                                <p class="stat-value text-2xl font-bold text-primary">+24,8k</p>
+                                <p class="text-xs text-muted mt-1" key-language="peti-stat-lines">linhas adicionadas</p>
                             </div>
-                            <div class="h-2 bg-dark/50 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-amber-500 to-orange-500 w-[80%] rounded-full">
-                                </div>
+                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
+                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="34">0</span></p>
+                                <p class="text-xs text-muted mt-1" key-language="peti-stat-users">usuários no seed de demo</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Complementary Skills -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6" data-aos="fade-left">
-                    <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group">
-                        <div
-                            class="w-12 h-12 bg-indigo-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-language text-indigo-400 text-xl"></i>
+                <!-- Featured: lib_school -->
+                <div class="card card-tilt p-7 md:p-10 mb-16" data-reveal="scale" data-reveal-delay="100">
+                    <div class="flex flex-col lg:flex-row gap-10">
+                        <div class="lg:w-7/12">
+                            <div class="flex flex-wrap items-center gap-2 mb-5">
+                                <span class="pill !text-primary !border-primary/30"><i class="fas fa-signal text-[10px]"></i> <span key-language="lib-tag-live">Em produção</span></span>
+                                <span class="pill"><i class="fas fa-heart text-[10px] text-amber"></i> <span key-language="lib-tag-free">Doado para minha ex-escola</span></span>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold font-heading text-white mb-4">lib_school</h3>
+                            <p class="text-slate-300 leading-relaxed mb-6" key-language="lib-description">
+                                Sistema completo de gestão de biblioteca, construído de graça para a biblioteca da
+                                minha antiga escola, hoje rodando em produção: catalogação de acervo,
+                                empréstimo/devolução para alunos e turmas, controle de atraso, relatórios por turma,
+                                autor e título — mais uma camada de gamificação pra incentivar leitura.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Python</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Django</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Firebase</span>
+                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Docker</span>
+                            </div>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://biblioteca-escolar-501619.web.app" target="_blank" rel="noopener"
+                                    class="text-primary text-sm font-semibold hover:underline flex items-center gap-2">
+                                    <span key-language="lib-cta-live">Acessar o sistema</span> <i class="fas fa-external-link-alt text-xs"></i>
+                                </a>
+                                <a href="https://github.com/PedroVNeves/lib_school" target="_blank" rel="noopener"
+                                    class="text-slate-300 text-sm font-semibold hover:text-white flex items-center gap-2">
+                                    <i class="fab fa-github"></i> <span key-language="lib-cta-code">Ver código</span>
+                                </a>
+                            </div>
                         </div>
-                        <h4 class="text-lg font-bold text-white mb-2" key-language="skill-advanced-english">Inglês
-                            Avançado (C1)</h4>
-                        <p class="text-sm text-slate-400">Fluência para comunicação global.</p>
-                    </div>
-
-                    <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group">
-                        <div
-                            class="w-12 h-12 bg-fuchsia-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-lightbulb text-fuchsia-400 text-xl"></i>
+                        <div class="lg:w-5/12 flex flex-col gap-3 justify-center">
+                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
+                                <i class="fas fa-book text-primary w-5"></i>
+                                <span class="text-sm text-slate-300" key-language="lib-feat-1">Catalogação e controle de acervo completo</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
+                                <i class="fas fa-right-left text-primary w-5"></i>
+                                <span class="text-sm text-slate-300" key-language="lib-feat-2">Empréstimo, devolução e atraso rastreados</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
+                                <i class="fas fa-chart-column text-primary w-5"></i>
+                                <span class="text-sm text-slate-300" key-language="lib-feat-3">Relatórios por turma, autor e título</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
+                                <i class="fas fa-trophy text-primary w-5"></i>
+                                <span class="text-sm text-slate-300" key-language="lib-feat-4">Gamificação para incentivar leitura</span>
+                            </div>
                         </div>
-                        <h4 class="text-lg font-bold text-white mb-2" key-language="skill-entrepreneurial-thinking">
-                            Empreendedorismo</h4>
-                        <p class="text-sm text-slate-400">Visão de negócios e inovação.</p>
-                    </div>
-
-                    <div class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 group">
-                        <div
-                            class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fas fa-puzzle-piece text-blue-400 text-xl"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2" key-language="skill-problem-solving">Resolução de
-                            Problemas</h4>
-                        <p class="text-sm text-slate-400">Pensamento analítico e crítico.</p>
-                    </div>
-
-                    <!-- Wakatime Badge -->
-                    <div
-                        class="glass-card p-6 rounded-2xl hover:bg-white/10 transition-all duration-300 flex flex-col justify-center items-center">
-                        <h4 class="text-sm font-bold text-slate-300 mb-3" key-language="skill-time-coded">Tempo de
-                            Código</h4>
-                        <figure><img
-                                src="https://wakatime.com/badge/user/cc389d26-71f3-4d80-915a-2c56372ee434.svg" alt="Total time coded since Oct 27 2024"></embed>
-                        </figure>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projetos" class="py-32 relative">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" key-language="projects-title">Meus Projetos
-                </h2>
-                <div class="w-24 h-1 bg-indigo-500 mx-auto rounded-full"></div>
-            </div>
-
-            <!-- Private Projects -->
-            <div class="mb-20">
-                <h3 class="text-2xl font-bold text-indigo-400 mb-8 flex items-center gap-3" data-aos="fade-right"
-                    key-language="projects-private-title">
-                    <i class="fas fa-lock"></i> Projetos Privados
+                <!-- Other projects -->
+                <h3 class="text-xl font-bold font-heading text-white mb-8 flex items-center gap-3" data-reveal>
+                    <i class="fas fa-layer-group text-secondary"></i> <span key-language="other-projects-title">Outros projetos</span>
                 </h3>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- SigmaChallenge -->
-                    <div class="glass-card p-6 rounded-2xl group hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up">
-                        <div class="overflow-hidden rounded-xl mb-6 border border-white/10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card card-tilt p-6 flex flex-col" data-reveal>
+                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
                             <img src="assets/SigmaChallengeLP.png" alt="SigmaChallenge"
-                                class="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500">
+                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
                         </div>
-                        <h4 class="text-xl font-bold text-white mb-3" key-language="project-sigmachallenge-title">
-                            SigmaChallenge - Landing Page</h4>
-                        <p class="text-slate-400 mb-6 text-sm leading-relaxed"
-                            key-language="project-sigmachallenge-description">
-                            Desenvolvimento de uma landing page otimizada para captação de leads em um projeto privado
-                            de inovação.
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading">SigmaChallenge</h4>
+                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-sigmachallenge-description">
+                            Landing page de captação de leads para um projeto privado de inovação.
                         </p>
-                        <div class="flex flex-wrap gap-2 pb-6">
-                            <span
-                                class="px-3 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs border border-indigo-500/30">Web
-                                Dev</span>
-                            <span
-                                class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs border border-blue-500/30">TypeScript</span>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">TypeScript</span>
                         </div>
-                        <a href="https://sigmachallenge.com.br" target="_blank"
-                            class="text-indigo-400 text-sm font-semibold hover:text-indigo-300 flex items-center gap-2 mt-auto pl-1">
-                            Acessar o Site <i class="fas fa-external-link-alt text-xs"></i>
+                        <a href="https://sigmachallenge.com.br" target="_blank" rel="noopener"
+                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
+                            <span key-language="project-visit-site">Acessar o site</span> <i class="fas fa-external-link-alt text-xs"></i>
                         </a>
                     </div>
 
-                    <!-- Canguru -->
-                    <div class="glass-card p-6 rounded-2xl group hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div
-                            class="overflow-hidden rounded-xl mb-6 border border-white/10 relative bg-dark/50 flex items-center justify-center h-56">
-                            <span class="text-slate-500 font-medium flex items-center gap-2">
-                                <img src="assets/canguru.jpeg" alt="SigmaChallenge"
-                                    class="w-full h-56 object-cover transform group-hover:scale-105 transition duration-500">
-                            </span>
+                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="60">
+                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
+                            <img src="assets/canguru.jpeg" alt="Canguru"
+                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
                         </div>
-                        <h4 class="text-xl font-bold text-white mb-3" key-language="project-SiteCanguru-title">Canguru</h4>
-                        <p class="text-slate-400 mb-6 text-sm leading-relaxed"
-                            key-language="project-SiteCanguru-description">
-                            Site educativo para treinamento de profissionais de saúde e famílias de recém-nascidos de
-                            alto risco.
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading">Canguru</h4>
+                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-canguru-description">
+                            Site educativo para treinamento de profissionais de saúde e famílias de recém-nascidos de alto risco.
                         </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs border border-emerald-500/30">Saúde</span>
-                            <span
-                                class="px-3 py-1 rounded-full bg-fuchsia-500/20 text-fuchsia-300 text-xs border border-fuchsia-500/30">Educação</span>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono" key-language="tag-health">Saúde</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono" key-language="tag-education">Educação</span>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Public Projects -->
-            <div>
-                <h3 class="text-2xl font-bold text-blue-400 mb-8 flex items-center gap-3" data-aos="fade-right"
-                    key-language="projects-public-title">
-                    <i class="fab fa-github"></i> Projetos Públicos
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Emotion Detection -->
-                    <div class="glass-card p-6 rounded-2xl flex flex-col group hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up">
-                        <div class="overflow-hidden rounded-xl mb-6 border border-white/10">
-                            <img src="assets/RealTimeEmotionDetection.png" alt="Emotion Detection"
-                                class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="120">
+                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
+                            <img src="assets/RealTimeEmotionDetection.png" alt="Realtime Emotion Detection"
+                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
                         </div>
-                        <h4 class="text-lg font-bold text-white mb-3" key-language="project-emotion-detection-title">
-                            Realtime Emotion Detection</h4>
-                        <p class="text-slate-400 mb-6 text-sm flex-grow"
-                            key-language="project-emotion-detection-description">
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="project-emotion-title">Realtime Emotion Detection</h4>
+                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-emotion-description">
                             Modelo de IA que detecta e classifica emoções faciais em tempo real via webcam.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">Python</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">AI/ML</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Python</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">OpenCV</span>
                         </div>
-                        <a href="https://github.com/PedroVNeves/Realtime-Emotion-Detection" target="_blank"
-                            class="text-indigo-400 text-sm font-semibold hover:text-indigo-300 flex items-center gap-2 mt-auto">
-                            Ver no GitHub <i class="fas fa-external-link-alt text-xs"></i>
+                        <a href="https://github.com/PedroVNeves/Realtime-Emotion-Detection" target="_blank" rel="noopener"
+                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
+                            <span key-language="project-see-code">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
                         </a>
                     </div>
 
-                    <!-- Daqui Pra o Mundo -->
-                    <div class="glass-card p-6 rounded-2xl flex flex-col group hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <div class="overflow-hidden rounded-xl mb-6 border border-white/10">
-                            <img src="assets/DaquiPraoMundoLP.png" alt="Daqui Pra o Mundo"
-                                class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-3" key-language="project-daquipraomundo-title">
-                            Projeto "Daqui Pra o Mundo"</h4>
-                        <p class="text-slate-400 mb-6 text-sm flex-grow"
-                            key-language="project-daquipraomundo-description">
-                            Website interativo para programa de intercâmbio, desenvolvido com HTML, Tailwind e JS.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">HTML/CSS</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">JS</span>
-                        </div>
-                        <a href="https://github.com/PedroVNeves/LPDPM" target="_blank"
-                            class="text-indigo-400 text-sm font-semibold hover:text-indigo-300 flex items-center gap-2 mt-auto">
-                            Ver no GitHub <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- College Board -->
-                    <div class="glass-card p-6 rounded-2xl flex flex-col group hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div class="overflow-hidden rounded-xl mb-6 border border-white/10">
-                            <img src="assets/CollegeBoard.png" alt="College Board"
-                                class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-3" key-language="project-CollegeBoard-title">College
-                            Board</h4>
-                        <p class="text-slate-400 mb-6 text-sm flex-grow"
-                            key-language="project-CollegeBoard-description">
-                            Simulação de probabilidade de aprovação em universidades baseada em notas SAT.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">React</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">Data</span>
-                        </div>
-                        <a href="https://github.com/TiagoCavalcante/NES-final-project" target="_blank"
-                            class="text-indigo-400 text-sm font-semibold hover:text-indigo-300 flex items-center gap-2 mt-auto">
-                            Ver no GitHub <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <!-- RAG Local -->
-                    <div class="glass-card p-6 rounded-2xl flex flex-col group hover:-translate-y-2 transition duration-300"
-                        data-aos="fade-up" data-aos-delay="300">
-                        <div class="overflow-hidden rounded-xl mb-6 border border-white/10">
+                    <div class="card card-tilt p-6 flex flex-col" data-reveal>
+                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
                             <img src="assets/RAG_LOCAL.png" alt="RAG Local"
-                                class="w-full h-48 object-cover transform group-hover:scale-105 transition duration-500">
+                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
                         </div>
-                        <h4 class="text-lg font-bold text-white mb-3" key-language="project-RAG_LOCAL-title">RAG Local
-                        </h4>
-                        <p class="text-slate-400 mb-6 text-sm flex-grow">
-                            Implementação de Retrieval-Augmented Generation rodando localmente.
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading">RAG Local</h4>
+                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-rag-description">
+                            Pipeline de Retrieval-Augmented Generation rodando localmente para responder perguntas sobre documentos.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">Python</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs">LLMs</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Python</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">LLMs</span>
                         </div>
-                        <a href="https://github.com/PedroVNeves/RAG_Local" target="_blank"
-                            class="text-indigo-400 text-sm font-semibold hover:text-indigo-300 flex items-center gap-2 mt-auto">
-                            Ver no GitHub <i class="fas fa-external-link-alt text-xs"></i>
+                        <a href="https://github.com/PedroVNeves/RAG_Local" target="_blank" rel="noopener"
+                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
+                            <span key-language="project-see-code-2">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+
+                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="60">
+                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
+                            <img src="assets/DaquiPraoMundoLP.png" alt="Daqui Pra o Mundo"
+                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="project-dpm-title">Projeto "Daqui Pra o Mundo"</h4>
+                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-dpm-description">
+                            Site interativo para o programa de intercâmbio que me levou à Inglaterra.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">HTML/CSS</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">JS</span>
+                        </div>
+                        <a href="https://github.com/PedroVNeves/LPDPM" target="_blank" rel="noopener"
+                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
+                            <span key-language="project-see-code-3">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
+                        </a>
+                    </div>
+
+                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="120">
+                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
+                            <img src="assets/CollegeBoard.png" alt="College Board"
+                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading">College Board</h4>
+                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-cb-description">
+                            Simulador de probabilidade de aprovação em universidades a partir de notas do SAT.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">React</span>
+                        </div>
+                        <a href="https://github.com/TiagoCavalcante/NES-final-project" target="_blank" rel="noopener"
+                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
+                            <span key-language="project-see-code-4">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="text-center mt-12">
-                    <a href="https://github.com/PedroVNeves" target="_blank"
-                        class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-300 text-white font-medium group">
-                        <i class="fab fa-github text-xl"></i> Ver Mais Projetos
+                <div class="text-center mt-12" data-reveal>
+                    <a href="https://github.com/PedroVNeves" target="_blank" rel="noopener" class="btn-ghost magnetic inline-flex">
+                        <i class="fab fa-github"></i> <span key-language="see-more-github">Ver mais no GitHub</span>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education & Certificates Section -->
-    <section id="educacao" class="py-32 relative">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-20" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" key-language="education-title">Educação &
-                    Conquistas</h2>
-                <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
-            </div>
+        <!-- Skills -->
+        <section id="habilidades" class="py-28 md:py-36 relative">
+            <div class="container mx-auto max-w-6xl px-6">
+                <div class="text-center mb-16" data-reveal>
+                    <span class="section-label">// habilidades</span>
+                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="skills-title">
+                        Como eu trabalho</h2>
+                    <p class="text-muted max-w-xl mx-auto" key-language="skills-subtitle">
+                        Stack técnica, aplicada em projetos reais — não em exercícios de curso.
+                    </p>
+                </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Olympiads -->
-                <div class="glass-card p-8 rounded-3xl" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
-                        key-language="olympiads-title">
-                        <i class="fas fa-medal text-yellow-400"></i> Olimpíadas
-                    </h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <div
-                                class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0">
-                                <i class="fas fa-trophy text-yellow-400"></i>
-                            </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="card p-7" data-reveal="left">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="skill-ring" data-p="90"><div class="skill-ring-inner">90%</div></div>
                             <div>
-                                <h4 class="text-lg font-bold text-white" key-language="obmep-2024-silver-title">Medalha
-                                    de Prata (Nacional) - OBMEP 2024</h4>
-                                <p class="text-slate-400 text-sm">Olimpíada Brasileira de Matemática das Escolas
-                                    Públicas.</p>
+                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-backend">Backend & Dados</h3>
+                                <p class="text-xs text-muted" key-language="skill-cat-backend-sub">O que sustenta a PETI 2027 e a lib_school</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <div
-                                class="w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0">
-                                <i class="fas fa-trophy text-yellow-400"></i>
-                            </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Python</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Django</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">SQL / PostgreSQL</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Testes automatizados (TDD)</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Java</span>
+                        </div>
+                    </div>
+
+                    <div class="card p-7" data-reveal="right">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="skill-ring" data-p="80"><div class="skill-ring-inner">80%</div></div>
                             <div>
-                                <h4 class="text-lg font-bold text-white" key-language="obmep-2024-gold-title">Medalha de
-                                    Ouro (Regional) - OBMEP 2024</h4>
+                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-frontend">Frontend</h3>
+                                <p class="text-xs text-muted" key-language="skill-cat-frontend-sub">Interfaces que os professores e alunos realmente usam</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <div
-                                class="w-10 h-10 rounded-full bg-slate-400/20 flex items-center justify-center shrink-0">
-                                <i class="fas fa-award text-slate-300"></i>
-                            </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">JavaScript / TypeScript</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">React</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Tailwind CSS</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">HTML / CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="card p-7" data-reveal="left">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="skill-ring" data-p="75"><div class="skill-ring-inner">75%</div></div>
                             <div>
-                                <h4 class="text-lg font-bold text-white"
-                                    key-language="obmep-2023-honorable-mention-title">Menção Honrosa (Nacional) - OBMEP
-                                    2023</h4>
+                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-ai">IA & Machine Learning</h3>
+                                <p class="text-xs text-muted" key-language="skill-cat-ai-sub">Da visão computacional a LLMs aplicados</p>
                             </div>
                         </div>
-                        <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <div
-                                class="w-10 h-10 rounded-full bg-slate-400/20 flex items-center justify-center shrink-0">
-                                <i class="fas fa-medal text-slate-300"></i>
-                            </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">OpenCV</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">LLMs / RAG</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-data-analysis-tag">Análise de dados</span>
+                        </div>
+                    </div>
+
+                    <div class="card p-7" data-reveal="right">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="skill-ring" data-p="95"><div class="skill-ring-inner">95%</div></div>
                             <div>
-                                <h4 class="text-lg font-bold text-white" key-language="oam-2021-silver-title">Medalha de
-                                    Prata - OAM 2021</h4>
-                                <p class="text-slate-400 text-sm">Olimpíada Alagoana de Matemática.</p>
+                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-collab">Colaboração & Comunicação</h3>
+                                <p class="text-xs text-muted" key-language="skill-cat-collab-sub">O que faz um time de 6 pessoas funcionar</p>
                             </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-english">Inglês (C1)</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Git / GitHub</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-docs">Documentação técnica</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-code-review">Code review</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Education & Courses -->
-                <div class="glass-card p-8 rounded-3xl" data-aos="fade-left">
-                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"
-                        key-language="education-courses-title">
-                        <i class="fas fa-graduation-cap text-fuchsia-400"></i> Educação & Cursos
-                    </h3>
-                    <div class="space-y-6">
-                        <a
-                            class="block p-4 rounded-xl hover:bg-white/5 transition duration-300 border border-transparent hover:border-white/10 group">
-                            <div class="flex items-center justify-between mb-2">
-                                <h4 class="text-lg font-bold text-white group-hover:text-indigo-400 transition"
-                                    key-language="course-fgv-title">Graduação em Ciência de Dados e IA FGV</h4>
-                            </div>
-                        </a>
-                        <a href="assets/certificadoC1.pdf" target="_blank"
-                            class="block p-4 rounded-xl hover:bg-white/5 transition duration-300 border border-transparent hover:border-white/10 group">
-                            <div class="flex items-center justify-between mb-2">
-                                <h4 class="text-lg font-bold text-white group-hover:text-indigo-400 transition"
-                                    key-language="certificate-english-c1-title">Inglês Avançado (C1)</h4>
-                                <i class="fas fa-external-link-alt text-slate-500 group-hover:text-indigo-400"></i>
-                            </div>
-                            <p class="text-slate-400 text-sm" key-language="certificate-english-c1-description">
-                                Comprovante de proficiência em inglês.</p>
-                        </a>
+                <div class="card p-6 flex flex-col sm:flex-row items-center justify-between gap-4" data-reveal>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-clock text-primary"></i>
+                        <span class="text-sm text-slate-300 font-mono" key-language="skill-time-coded">Tempo de código registrado</span>
+                    </div>
+                    <img src="https://wakatime.com/badge/user/cc389d26-71f3-4d80-915a-2c56372ee434.svg"
+                        alt="Total time coded since Oct 27 2024" class="rounded">
+                </div>
+            </div>
+        </section>
 
-                        <div class="p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <h4 class="text-lg font-bold text-white mb-1" key-language="nes-module4-title">NES - Módulo
-                                IV (Cursando)</h4>
-                            <p class="text-slate-400 text-sm">Cálculo 3, Teoria dos Grafos, Redes Neurais.</p>
+        <!-- Trajectory / Timeline -->
+        <section id="trajetoria" class="py-28 md:py-36 relative bg-surface/20">
+            <div class="container mx-auto max-w-3xl px-6">
+                <div class="text-center mb-16" data-reveal>
+                    <span class="section-label">// trajetória</span>
+                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="path-title">
+                        Educação & conquistas</h2>
+                </div>
+
+                <div class="relative pl-12">
+                    <div class="timeline-line"></div>
+
+                    <div class="relative flex gap-5 pb-10" data-reveal="left">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-graduation-cap text-primary text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-1">Atual</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-1">Ciência de Dados & IA — FGV</h4>
+                            <p class="text-sm text-muted mt-1" key-language="tl-desc-1">Graduação em andamento.</p>
                         </div>
+                    </div>
 
-                        <div class="p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <h4 class="text-lg font-bold text-white mb-1" key-language="nes-module3-title">NES - Módulo
-                                III</h4>
-                            <p class="text-slate-400 text-sm">IA, Álgebra Linear, Estrutura de Dados.</p>
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="60">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-building-columns text-primary text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-2">Atual</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-2">LED-UFAL — Contribuidor da PETI 2027</h4>
+                            <p class="text-sm text-muted mt-1" key-language="tl-desc-2">Laboratório de pesquisa da UFAL — plataforma acadêmica em produção interna.</p>
                         </div>
+                    </div>
 
-                        <div class="p-4 rounded-xl hover:bg-white/5 transition duration-300">
-                            <h4 class="text-lg font-bold text-white mb-1" key-language="program-daquipraomundo-title">
-                                Programa "Daqui Pra o Mundo"</h4>
-                            <p class="text-slate-400 text-sm">Intercâmbio na Inglaterra.</p>
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="120">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-brain text-primary text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-3">NES — Módulo IV</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-3">Cálculo 3, Teoria dos Grafos, Redes Neurais</h4>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="140">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-diagram-project text-primary text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-4">NES — Módulo III</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-4">IA, Álgebra Linear, Estrutura de Dados</h4>
+                            <a href="assets/NesMod-I-II.pdf" target="_blank" rel="noopener" class="text-xs text-primary hover:underline mt-2 inline-block" key-language="tl-link-4">Ver conteúdo dos módulos anteriores</a>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="160">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-trophy text-amber text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-amber mb-1">OBMEP 2024</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-5">Medalha de Prata (Nacional) e Ouro (Regional)</h4>
+                            <p class="text-sm text-muted mt-1" key-language="tl-desc-5">Olimpíada Brasileira de Matemática das Escolas Públicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="180">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-award text-slate-300 text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-muted mb-1">OBMEP 2023</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-6">Menção Honrosa (Nacional)</h4>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="200">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-medal text-slate-300 text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-muted mb-1">OAM 2021</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-7">Medalha de Prata</h4>
+                            <p class="text-sm text-muted mt-1" key-language="tl-desc-7">Olimpíada Alagoana de Matemática.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="220">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-plane text-secondary text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-secondary mb-1" key-language="tl-date-8">Intercâmbio</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-8">Programa "Daqui Pra o Mundo" — Inglaterra</h4>
+                        </div>
+                    </div>
+
+                    <div class="relative flex gap-5" data-reveal="left" data-reveal-delay="240">
+                        <div class="timeline-dot absolute -left-12"><i class="fas fa-language text-secondary text-sm"></i></div>
+                        <div class="card p-5 w-full">
+                            <p class="text-xs font-mono text-secondary mb-1" key-language="tl-date-9">Certificação</p>
+                            <h4 class="font-bold text-white font-heading" key-language="tl-title-9">Inglês Avançado (C1)</h4>
+                            <a href="assets/certificadoC1.pdf" target="_blank" rel="noopener" class="text-xs text-primary hover:underline mt-2 inline-block" key-language="tl-link-9">Ver certificado</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contato" class="py-32 relative">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4" key-language="contact-title">Entre em Contato
-                </h2>
-                <div class="w-24 h-1 bg-indigo-500 mx-auto rounded-full"></div>
-                <p class="text-slate-400 mt-6 text-lg max-w-2xl mx-auto">
-                    Estou sempre aberto a novas oportunidades e projetos interessantes. Vamos construir algo incrível
-                    juntos!
-                </p>
+        <!-- Contact -->
+        <section id="contato" class="py-28 md:py-36 relative">
+            <div class="container mx-auto max-w-5xl px-6">
+                <div class="text-center mb-16" data-reveal>
+                    <span class="section-label">// contato</span>
+                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="contact-title">
+                        Vamos conversar</h2>
+                    <p class="text-muted max-w-xl mx-auto" key-language="contact-subtitle">
+                        Aberto a estágios, vagas júnior e projetos interessantes. Respondo rápido.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <a href="mailto:pedro.vasconcelosneves@gmail.com"
+                        class="card card-tilt p-8 text-center group" data-reveal data-reveal-delay="80">
+                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                            <i class="fas fa-envelope text-xl text-primary"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="contact-email">Email</h4>
+                        <p class="text-muted text-sm break-all">pedro.vasconcelosneves@gmail.com</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank" rel="noopener"
+                        class="card card-tilt p-8 text-center group" data-reveal data-reveal-delay="160">
+                        <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                            <i class="fab fa-linkedin-in text-xl text-secondary"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="contact-linkedin">LinkedIn</h4>
+                        <p class="text-muted text-sm" key-language="contact-linkedin-sub">Conecte-se comigo</p>
+                    </a>
+
+                    <a href="https://www.instagram.com/o_pedro.neves" target="_blank" rel="noopener"
+                        class="card card-tilt p-8 text-center group" data-reveal data-reveal-delay="240">
+                        <div class="w-14 h-14 bg-amber/10 rounded-full flex items-center justify-center mx-auto mb-5">
+                            <i class="fab fa-instagram text-xl text-amber"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="contact-instagram">Instagram</h4>
+                        <p class="text-muted text-sm" key-language="contact-instagram-sub">Siga meu dia a dia</p>
+                    </a>
+                </div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Email -->
-                <a href="mailto:pedro.vasconcelosneves@gmail.com"
-                    class="glass-card p-8 rounded-2xl text-center group hover:-translate-y-2 transition duration-300"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div
-                        class="w-16 h-16 bg-indigo-500/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-indigo-500 transition duration-300">
-                        <i class="fas fa-envelope text-2xl text-indigo-400 group-hover:text-white transition"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-2" key-language="contact-email">Email</h4>
-                    <p class="text-slate-400 text-sm break-all">pedro.vasconcelosneves@gmail.com</p>
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank"
-                    class="glass-card p-8 rounded-2xl text-center group hover:-translate-y-2 transition duration-300"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div
-                        class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-500 transition duration-300">
-                        <i class="fab fa-linkedin-in text-2xl text-blue-400 group-hover:text-white transition"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-2" key-language="contact-linkedin">LinkedIn</h4>
-                    <p class="text-slate-400 text-sm">Conecte-se comigo</p>
-                </a>
-
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/o_pedro.neves" target="_blank"
-                    class="glass-card p-8 rounded-2xl text-center group hover:-translate-y-2 transition duration-300"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div
-                        class="w-16 h-16 bg-fuchsia-500/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-fuchsia-500 transition duration-300">
-                        <i class="fab fa-instagram text-2xl text-fuchsia-400 group-hover:text-white transition"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-2" key-language="contact-instagram">Instagram</h4>
-                    <p class="text-slate-400 text-sm">Siga meu dia a dia</p>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-black/40 backdrop-blur-md border-t border-white/5 py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="mb-8">
-                <span
-                    class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-fuchsia-400">
-                    Pedro Neves
-                </span>
+    <footer class="border-t border-white/5 py-10">
+        <div class="container mx-auto max-w-6xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-primary"></span>
+                <span class="font-bold font-heading text-white">Pedro Neves</span>
             </div>
-            <p class="text-slate-500 text-sm mb-4" key-language="footer-copyright">&copy; 2025 Pedro Neves. Todos os
-                direitos reservados.</p>
-            <p class="text-slate-500 text-sm flex items-center justify-center gap-2" key-language="footer-made-with">
-                Feito com <i class="fas fa-heart text-rose-500 animate-pulse"></i> e <span
-                    class="text-indigo-400 font-medium">código</span>
-            </p>
+            <p class="text-faint text-xs font-mono" key-language="footer-copyright">© 2026 Pedro Neves — feito à mão, sem template.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Translations
-        const translations = {
-            pt: {
-                "home-nav": "Início",
-                "about-nav": "Sobre Mim",
-                "skills-nav": "Habilidades",
-                "projects-nav": "Projetos",
-                "certificates-nav": "Educação",
-                "contact-nav": "Contato",
-
-                "home-mobile-nav": "Início",
-                "about-mobile-nav": "Sobre Mim",
-                "skills-mobile-nav": "Habilidades",
-                "projects-mobile-nav": "Projetos",
-                "certificates-mobile-nav": "Educação",
-                "contact-mobile-nav": "Contato",
-
-                "hero-subtitle": "Um <span class=\"font-semibold text-indigo-300\">Jovem Desenvolvedor</span> transformando ideias em inovação digital.",
-
-                "about-title": "Sobre Mim",
-                "about-p1": "Sou um jovem de 18 anos, apaixonado por tecnologia e inovação, com uma jornada de aprendizado contínuo no NES. Atualmente, estou finalizando o terceiro ano do ensino médio e sempre buscando aplicar o conhecimento em projetos práticos.",
-                "about-p2": "Minha experiência inclui o desenvolvimento de landing pages para projetos como o SigmaChallenge, demonstrando minha habilidade em criar interfaces web eficazes. Tenho um forte interesse em Inteligência Artificial, onde já desenvolvi um modelo que detecta emoções usando OpenCV.",
-                "about-p3": "Sou um entusiasta de competições acadêmicas, sendo medalhista da OBMEP e da OAM. Fui aprovado no prestigioso programa \"Daqui Pra o Mundo\", que me proporcionou um intercâmbio na Inglaterra.",
-
-                "skills-title": "Minhas Habilidades",
-                "skills-technical-title": "<i class=\"fas fa-laptop-code text-indigo-400\"></i> Hard Skills",
-                "skill-programming-languages": "Linguagens (Python, JS)",
-                "skill-web-development": "Desenvolvimento Web",
-                "skill-ai-ml": "IA & Machine Learning",
-                "skill-data-analysis": "Análise de Dados",
-                "skill-advanced-english": "Inglês Avançado (C1)",
-                "skill-entrepreneurial-thinking": "Empreendedorismo",
-                "skill-problem-solving": "Resolução de Problemas",
-                "skill-time-coded": "Tempo de Código",
-
-                "projects-title": "Meus Projetos",
-                "projects-private-title": "<i class=\"fas fa-lock\"></i> Projetos Privados",
-                "projects-public-title": "<i class=\"fab fa-github\"></i> Projetos Públicos",
-                "project-sigmachallenge-title": "SigmaChallenge - Landing Page",
-                "project-sigmachallenge-description": "Desenvolvimento de uma landing page otimizada para captação de leads em um projeto privado de inovação.",
-                "project-SiteCanguru-title": "Site Canguru",
-                "project-SiteCanguru-description": "Site educativo para treinamento de profissionais de saúde e famílias de recém-nascidos de alto risco.",
-                "project-emotion-detection-title": "Realtime Emotion Detection",
-                "project-emotion-detection-description": "Modelo de IA que detecta e classifica emoções faciais em tempo real via webcam.",
-                "project-daquipraomundo-title": "Projeto \"Daqui Pra o Mundo\"",
-                "project-daquipraomundo-description": "Website interativo para programa de intercâmbio, desenvolvido com HTML, Tailwind e JS.",
-                "project-CollegeBoard-title": "College Board",
-                "project-CollegeBoard-description": "Simulação de probabilidade de aprovação em universidades baseada em notas SAT.",
-                "project-RAG_LOCAL-title": "RAG Local",
-
-                "education-title": "Educação & Conquistas",
-                "olympiads-title": "<i class=\"fas fa-medal text-yellow-400\"></i> Olimpíadas",
-                "education-courses-title": "<i class=\"fas fa-graduation-cap text-fuchsia-400\"></i> Educação & Cursos",
-                "obmep-2024-silver-title": "Medalha de Prata (Nacional) - OBMEP 2024",
-                "obmep-2024-gold-title": "Medalha de Ouro (Regional) - OBMEP 2024",
-                "obmep-2023-honorable-mention-title": "Menção Honrosa (Nacional) - OBMEP 2023",
-                "oam-2021-silver-title": "Medalha de Prata - OAM 2021",
-                "course-fgv-title": "Graduação em Ciência de Dados e IA FGV",
-                "certificate-english-c1-title": "Inglês Avançado (C1)",
-                "certificate-english-c1-description": "Comprovante de proficiência em inglês.",
-                "nes-module4-title": "NES - Módulo IV (Cursando)",
-                "nes-module3-title": "NES - Módulo III",
-                "program-daquipraomundo-title": "Programa \"Daqui Pra o Mundo\"",
-
-                "contact-title": "Entre em Contato",
-                "contact-email": "Email",
-                "contact-linkedin": "LinkedIn",
-                "contact-instagram": "Instagram",
-                "footer-copyright": "&copy; 2025 Pedro Neves. Todos os direitos reservados.",
-                "footer-made-with": "Feito com <i class=\"fas fa-heart text-rose-500 animate-pulse\"></i> e <span class=\"text-indigo-400 font-medium\">código</span>"
-            },
-            en: {
-                "home-nav": "Home",
-                "about-nav": "About Me",
-                "skills-nav": "Skills",
-                "projects-nav": "Projects",
-                "certificates-nav": "Education",
-                "contact-nav": "Contact",
-
-                "home-mobile-nav": "Home",
-                "about-mobile-nav": "About Me",
-                "skills-mobile-nav": "Skills",
-                "projects-mobile-nav": "Projects",
-                "certificates-mobile-nav": "Education",
-                "contact-mobile-nav": "Contact",
-
-                "hero-subtitle": "A <span class=\"font-semibold text-indigo-300\">Young Developer</span> transforming ideas into digital innovation.",
-
-                "about-title": "About Me",
-                "about-p1": "I'm a 18-year-old passionate about technology and innovation, on a continuous learning journey at NES. Currently, I'm finishing my third year of high school and always looking to apply knowledge in practical projects.",
-                "about-p2": "My experience includes developing landing pages for projects like SigmaChallenge, demonstrating my ability to create effective web interfaces. I have a strong interest in Artificial Intelligence, where I have already developed a model that detects emotions using OpenCV.",
-                "about-p3": "I am an enthusiast of academic competitions, being a medalist of OBMEP and OAM. I was accepted into the prestigious \"Daqui Pra o Mundo\" program, which provided me with an exchange in England.",
-
-                "skills-title": "My Skills",
-                "skills-technical-title": "<i class=\"fas fa-laptop-code text-indigo-400\"></i> Hard Skills",
-                "skill-programming-languages": "Languages (Python, JS)",
-                "skill-web-development": "Web Development",
-                "skill-ai-ml": "AI & Machine Learning",
-                "skill-data-analysis": "Data Analysis",
-                "skill-advanced-english": "Advanced English (C1)",
-                "skill-entrepreneurial-thinking": "Entrepreneurial Thinking",
-                "skill-problem-solving": "Problem Solving",
-                "skill-time-coded": "Time Coded",
-
-                "projects-title": "My Projects",
-                "projects-private-title": "<i class=\"fas fa-lock\"></i> Private Projects",
-                "projects-public-title": "<i class=\"fab fa-github\"></i> Public Projects",
-                "project-sigmachallenge-title": "SigmaChallenge - Landing Page",
-                "project-sigmachallenge-description": "Development of an optimized landing page for lead capture in a private innovation project.",
-                "project-SiteCanguru-title": "Canguru Site",
-                "project-SiteCanguru-description": "Educational website for training healthcare professionals and families of high-risk newborns.",
-                "project-emotion-detection-title": "Realtime Emotion Detection",
-                "project-emotion-detection-description": "AI model that detects and classifies facial emotions in real-time via webcam.",
-                "project-daquipraomundo-title": "Project \"Daqui Pra o Mundo\"",
-                "project-daquipraomundo-description": "Interactive website for exchange program, developed with HTML, Tailwind and JS.",
-                "project-CollegeBoard-title": "College Board",
-                "project-CollegeBoard-description": "Simulation of university acceptance probability based on SAT scores.",
-                "project-RAG_LOCAL-title": "Local RAG",
-
-                "education-title": "Education & Achievements",
-                "olympiads-title": "<i class=\"fas fa-medal text-yellow-400\"></i> Olympiads",
-                "education-courses-title": "<i class=\"fas fa-graduation-cap text-fuchsia-400\"></i> Education & Courses",
-                "obmep-2024-silver-title": "Silver Medal (National) - OBMEP 2024",
-                "obmep-2024-gold-title": "Gold Medal (Regional) - OBMEP 2024",
-                "obmep-2023-honorable-mention-title": "Honorable Mention (National) - OBMEP 2023",
-                "oam-2021-silver-title": "Silver Medal - OAM 2021",
-                "course-fgv-title": "Bachelor's Degree in Data Science and AI from FGV",
-                "certificate-english-c1-title": "Advanced English (C1)",
-                "certificate-english-c1-description": "Proof of English proficiency.",
-                "nes-module4-title": "NES - Module IV (Current)",
-                "nes-module3-title": "NES - Module III",
-                "program-daquipraomundo-title": "Program \"Daqui Pra o Mundo\"",
-
-                "contact-title": "Contact Me",
-                "contact-email": "Email",
-                "contact-linkedin": "LinkedIn",
-                "contact-instagram": "Instagram",
-                "footer-copyright": "&copy; 2025 Pedro Neves. All rights reserved.",
-                "footer-made-with": "Made with <i class=\"fas fa-heart text-rose-500 animate-pulse\"></i> and <span class=\"text-indigo-400 font-medium\">code</span>"
-            }
-        };
-
-        let currentLang = 'pt';
-
-        function applyTranslations() {
-            document.querySelectorAll('[key-language]').forEach(element => {
-                const key = element.getAttribute('key-language');
-                if (translations[currentLang] && translations[currentLang][key]) {
-                    element.innerHTML = translations[currentLang][key];
-                }
-            });
-        }
-
-        function updateLanguageToggle(toggleElement) {
-            if (!toggleElement) return;
-            toggleElement.querySelectorAll('.lang-option').forEach(option => {
-                if (option.dataset.lang === currentLang) {
-                    option.classList.add('active');
-                } else {
-                    option.classList.remove('active');
-                }
-            });
-        }
-
-        function toggleLanguage(e) {
-            if (e.target.classList.contains('lang-option')) {
-                const selectedLang = e.target.dataset.lang;
-                if (selectedLang !== currentLang) {
-                    currentLang = selectedLang;
-                    document.documentElement.lang = currentLang;
-                    applyTranslations();
-                    updateLanguageToggle(document.getElementById('language-toggle'));
-                    updateLanguageToggle(document.getElementById('language-toggle-mobile'));
-                }
-            }
-        }
-
-        // Event listeners
-        document.addEventListener('DOMContentLoaded', () => {
-            applyTranslations();
-
-            const desktopToggle = document.getElementById('language-toggle');
-            const mobileToggle = document.getElementById('language-toggle-mobile');
-
-            if (desktopToggle) desktopToggle.addEventListener('click', toggleLanguage);
-            if (mobileToggle) mobileToggle.addEventListener('click', toggleLanguage);
-
-            // AOS Init
-            AOS.init({
-                once: true,
-                duration: 800,
-                easing: 'ease-out-cubic',
-                offset: 100,
-            });
-
-            // Mobile Menu
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
-
-                mobileMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            }
-
-            // Scroll Down Button
-            const scrollBtn = document.getElementById('scroll-down-button');
-            if (scrollBtn) {
-                scrollBtn.addEventListener('click', () => {
-                    document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
-                });
-            }
-
-            // Navbar Scroll Effect
-            const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('py-2');
-                    navbar.querySelector('.glass').classList.add('bg-black/60', 'backdrop-blur-xl');
-                } else {
-                    navbar.classList.remove('py-2');
-                    navbar.querySelector('.glass').classList.remove('bg-black/60', 'backdrop-blur-xl');
-                }
-            });
-        });
-    </script>
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
