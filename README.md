@@ -17,6 +17,7 @@
 ## About Me
 
 - 🎓 Studying **Data Science & AI** at **FGV**
+- 🔬 Contributor at **LED-UFAL**, a university research lab, building **PETI 2027** — a full-stack Django platform with 257 automated tests and a 6-person team
 - 🧠 Alum of **NES** (Novo Ensino Suplementar) — a free academic-excellence extension program for top-performing high schoolers, where I studied AI, Neural Networks, Linear Algebra & Calculus before university
 - 🏆 **OBMEP** (Silver National / Gold Regional) and **OAM** (Silver) academic medals
 - 🌍 Exchange student alumnus — *"Daqui Pra o Mundo"* program (England)
@@ -39,20 +40,17 @@ Librarians manage the entire catalog and loan cycle online instead of on paper: 
 
 `Python` · `Django` · `SQLite/PostgreSQL` · `Firebase Hosting` · `Docker`
 
-### 🎓 [prepara-enem](https://github.com/PedroVNeves/prepara-enem) — ENEM Prep Platform
+### 🎓 PETI 2027 — Academic Platform @ LED-UFAL
 
-Helping Brazilian students **improve their ENEM scores and get into the university they're aiming for**. Deployed and evolving in production.
+Full-stack Django platform I help build at **LED-UFAL**, a university research lab, orchestrating the yearly tracks of **PETI** — a program that trains Brazilian students for math olympiads. Private lab repo, active development, built with a 6-person team.
 
-- **2,757 real ENEM questions (2009–2023)** as a single adaptive question bank, not fixed year-by-year exams
-- **Item Response Theory (IRT)** calibration (`girth`, EM/marginal maximum likelihood) to estimate each student's proficiency (θ) and select questions by difficulty band relative to it
-- **AI-graded essays (redação)**: Gemini grades submissions against the 5 official ENEM competencies and returns per-competency feedback, running automatically through a background scheduler
-- **Multi-role accounts**: schools/teachers managing classes, students linked to a school, and independent individual students — with a context switcher for users who hold more than one role
-- **Interactive analytics dashboards** (D3.js) showing proficiency by subject area, error breakdown, and progress over time
-- Deployed on **Google Cloud Run** with Postgres (Neon) and a CI/CD pipeline via Cloud Build
+- **Two-layer authorization** (role × scope): a professor's role proves *what* they can do, a separate `Atribuicao` scope proves *where* — never trusting the role alone
+- **Automatic provisioning engine**: creating a track cascades into generating its curricular weeks and every class instance across subjects and weekly time slots
+- **257 automated tests** (`django.test.TestCase`) covering permission boundaries, model validation, and full CRUD flows across 6 Django apps
+- **49 personal commits**, +24.8k/−3.7k lines, touching every app in the codebase — data modeling, authorization, scheduling logic, and tests
+- Idempotent seed command generating a full demo dataset (34 users, 4 tracks) with real program curriculum data
 
-**🔗 Live:** [prepara-enem-pw3vw6bmvq-rj.a.run.app](https://prepara-enem-pw3vw6bmvq-rj.a.run.app)
-
-`Python` · `Django` · `PostgreSQL` · `Google Cloud Run` · `Gemini API` · `D3.js`
+`Python` · `Django` · `SQL` · `Role-Based Access Control` · `Test-Driven Development`
 
 ---
 
@@ -87,7 +85,7 @@ Helping Brazilian students **improve their ENEM scores and get into the universi
   <br/>
   <img src="https://img.shields.io/badge/Machine%20Learning-F9AB00?style=for-the-badge&logo=google&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white" />
-  <img src="https://img.shields.io/badge/LLMs%20%2F%20Gemini-000000?style=for-the-badge&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/LLMs%20%2F%20RAG-000000?style=for-the-badge&logo=openai&logoColor=white" />
 </p>
 
 ## 📈 GitHub Stats
