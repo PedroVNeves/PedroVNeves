@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Pedro%20Neves&fontSize=70&fontAlignY=35&desc=Data%20Science%20%26%20AI%20Student%20@%20FGV%20|%20Building%20real%20software%20for%20real%20people&descAlignY=55&descAlign=50" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Pedro%20Neves&fontSize=70&fontAlignY=35&desc=Data%20Science%20%26%20AI%20Student%20@%20FGV%20|%20LED-UFAL%20Contributor%20%26%20Full-Stack%20Dev&descAlignY=55&descAlign=50" />
 </div>
 
 <p align="center">
-  <em>18 years old, based in Brazil. I like building things that people actually use — not just tutorial projects.</em>
+  <em>18 years old, based in Brazil. I like building things people actually use, not just tutorial projects.</em>
 </p>
 
 <p align="center">
@@ -17,20 +17,20 @@
 ## About Me
 
 - 🎓 Studying **Data Science & AI** at **FGV**
-- 🔬 Contributor at **LED-UFAL**, a university research lab, building **PETI 2027** — a full-stack Django platform with 257 automated tests and a 6-person team
-- 🧠 Alum of **NES** (Novo Ensino Suplementar) — a free academic-excellence extension program for top-performing high schoolers, where I studied AI, Neural Networks, Linear Algebra & Calculus before university
-- 🏆 **OBMEP** (Silver National / Gold Regional) and **OAM** (Silver) academic medals
-- 🌍 Exchange student alumnus — *"Daqui Pra o Mundo"* program (England)
+- 🔬 Contributor at **LED-UFAL**, a university research lab, where I help build **PETI 2027**: a full-stack Django platform with 257 automated tests and a 6-person team
+- 🧠 Alum of **NES** (Novo Ensino Suplementar), a free academic-excellence extension program for top-performing high schoolers, where I studied AI, Neural Networks, Linear Algebra & Calculus before university
+- 🏆 **OBMEP** medalist: Silver National + Gold Regional in 2024 and 2025, Honorable Mention National in 2023. Also Silver medalist at **OAM**
+- 🌍 Exchange student alumnus, *"Daqui Pra o Mundo"* program (England)
 - 🗣️ Fluent in English (C1 certified) and Portuguese
-- 💡 I ship end-to-end products: backend, deploy, and the product thinking in between — not just proof-of-concepts
+- 💡 I usually go end-to-end on a project: backend, deploy, and the product decisions in between, not just a proof-of-concept
 
 ---
 
 ## 🚀 Featured Projects
 
-I care most about software that solves a real problem for real users. These two are currently live and in active use / development.
+These two matter most to me: one is in daily use at a school, the other is where I do most of my current work.
 
-### 📚 [lib_school](https://github.com/PedroVNeves/lib_school) — School Library Management System
+### 📚 [lib_school](https://github.com/PedroVNeves/lib_school): School Library Management System
 
 Built **for free** for the library of my former school, currently **running in production**.
 
@@ -40,14 +40,14 @@ Librarians manage the entire catalog and loan cycle online instead of on paper: 
 
 `Python` · `Django` · `SQLite/PostgreSQL` · `Firebase Hosting` · `Docker`
 
-### 🎓 PETI 2027 — Academic Platform @ LED-UFAL
+### 🎓 PETI 2027: Academic Platform @ LED-UFAL
 
-Full-stack Django platform I help build at **LED-UFAL**, a university research lab, orchestrating the yearly tracks of **PETI** — a program that trains Brazilian students for math olympiads. Private lab repo, active development, built with a 6-person team.
+Full-stack Django platform I help build at **LED-UFAL**, a university research lab. It orchestrates the yearly tracks of **PETI**, a program that trains Brazilian students for math olympiads. Private lab repo, active development, built with a 6-person team.
 
-- **Two-layer authorization** (role × scope): a professor's role proves *what* they can do, a separate `Atribuicao` scope proves *where* — never trusting the role alone
+- **Two-layer authorization** (role × scope): a professor's role proves *what* they can do, and a separate `Atribuicao` scope proves *where*, so the role alone is never enough
 - **Automatic provisioning engine**: creating a track cascades into generating its curricular weeks and every class instance across subjects and weekly time slots
 - **257 automated tests** (`django.test.TestCase`) covering permission boundaries, model validation, and full CRUD flows across 6 Django apps
-- **49 personal commits**, +24.8k/−3.7k lines, touching every app in the codebase — data modeling, authorization, scheduling logic, and tests
+- **49 personal commits**, +24.8k/−3.7k lines, touching every app in the codebase: data modeling, authorization, scheduling logic, and tests
 - Idempotent seed command generating a full demo dataset (34 users, 4 tracks) with real program curriculum data
 
 `Python` · `Django` · `SQL` · `Role-Based Access Control` · `Test-Driven Development`
@@ -56,11 +56,11 @@ Full-stack Django platform I help build at **LED-UFAL**, a university research l
 
 ## 🛠️ Other Projects
 
-- 🎭 **[Realtime Emotion Detection](https://github.com/PedroVNeves/Realtime-Emotion-Detection)** — real-time facial emotion classification via webcam (Python, OpenCV)
-- 🧠 **[RAG Local](https://github.com/PedroVNeves/RAG_Local)** — local Retrieval-Augmented Generation pipeline for question answering (Python, LLMs)
-- 🎓 **[College Board Simulator](https://github.com/TiagoCavalcante/NES-final-project)** — simulates university acceptance probability from SAT scores (React)
-- ✈️ **[Daqui Pra o Mundo](https://github.com/PedroVNeves/LPDPM)** — landing page for an exchange program (HTML, Tailwind, JS)
-- 🚀 **[SigmaChallenge](https://sigmachallenge.com.br)** — lead-capture landing page for a private innovation project (TypeScript)
+- 🎭 **[Realtime Emotion Detection](https://github.com/PedroVNeves/Realtime-Emotion-Detection)**: real-time facial emotion classification via webcam (Python, OpenCV)
+- 🧠 **[RAG Local](https://github.com/PedroVNeves/RAG_Local)**: local Retrieval-Augmented Generation pipeline for question answering (Python, LLMs)
+- 🎓 **[College Board Simulator](https://github.com/TiagoCavalcante/NES-final-project)**: simulates university acceptance probability from SAT scores (React)
+- ✈️ **[Daqui Pra o Mundo](https://github.com/PedroVNeves/LPDPM)**: landing page for an exchange program (HTML, Tailwind, JS)
+- 🚀 **[SigmaChallenge](https://sigmachallenge.com.br)**: lead-capture landing page for a private innovation project (TypeScript)
 
 ---
 
@@ -104,5 +104,5 @@ Full-stack Django platform I help build at **LED-UFAL**, a university research l
 ---
 
 <div align="center">
-  <i>Transforming ideas into digital innovation.</i>
+  <i>Thanks for stopping by, feel free to reach out.</i>
 </div>

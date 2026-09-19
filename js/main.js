@@ -67,7 +67,7 @@
                 return { ...proj, sx: cx + proj.x, sy: cy + proj.y, pulse: p.pulse };
             });
 
-            // edges — connect near neighbours only, cheap O(n^2) is fine at this N
+            // edges: connect near neighbours only, cheap O(n^2) is fine at this N
             ctx.lineWidth = 1;
             for (let i = 0; i < projected.length; i++) {
                 for (let j = i + 1; j < projected.length; j++) {
