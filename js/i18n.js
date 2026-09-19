@@ -23,7 +23,7 @@ window.PETI_TRANSLATIONS = {
         "peti-description": "Plataforma Django que organiza as trilhas anuais do PETI, o programa que prepara estudantes brasileiros para olimpíadas de matemática. Entrei principalmente na modelagem de dados, no sistema de autorização em duas camadas (papel × escopo), no motor que gera aulas e semanas automaticamente, e na suíte de testes que segura tudo isso de pé.",
         "peti-note": "Código do laboratório não é público, mas os números abaixo saíram direto do histórico do git.",
         "peti-stat-apps": "apps Django modulares", "peti-stat-tests": "testes automatizados", "peti-stat-commits": "commits pessoais",
-        "peti-stat-team": "pessoas na equipe", "peti-stat-lines": "linhas adicionadas", "peti-stat-users": "usuários no seed de demo",
+        "peti-stat-team": "pessoas na equipe", "peti-stat-lines": "linhas adicionadas", "peti-stat-users": "usuários regulares estimados",
 
         "lib-tag-live": "Em produção", "lib-tag-free": "Doado para minha ex-escola",
         "lib-description": "Sistema de biblioteca que construí de graça para a minha antiga escola e que roda em produção até hoje: catalogação do acervo, empréstimo e devolução por aluno ou turma, controle de atraso, relatórios por turma/autor/título, e uma camada de gamificação pra incentivar leitura.",
@@ -100,7 +100,7 @@ window.PETI_TRANSLATIONS = {
         "peti-description": "Django platform that organizes PETI's yearly tracks, the program that trains Brazilian students for math olympiads. My main work: data modeling, a two-layer authorization system (role × scope), the engine that generates classes and weeks automatically, and the test suite that keeps all of it standing.",
         "peti-note": "The lab's code isn't public, but the numbers below come straight from the git history.",
         "peti-stat-apps": "modular Django apps", "peti-stat-tests": "automated tests", "peti-stat-commits": "personal commits",
-        "peti-stat-team": "people on the team", "peti-stat-lines": "lines added", "peti-stat-users": "users in the demo seed",
+        "peti-stat-team": "people on the team", "peti-stat-lines": "lines added", "peti-stat-users": "estimated regular users",
 
         "lib-tag-live": "In production", "lib-tag-free": "Donated to my former school",
         "lib-description": "Library system I built for free for my former school, still running in production: cataloging the collection, checking books in and out by student or class, overdue tracking, reports by class/author/title, and a gamification layer to encourage reading.",
