@@ -17,7 +17,7 @@
 ## About Me
 
 - 🎓 Studying **Data Science & AI** at **FGV**
-- 🔬 Contributor at **LED-UFAL**, a university research lab, where I help build **PETI 2027**: a full-stack Django platform with 257 automated tests and a 6-person team
+- 🔬 Contributor at **LED-UFAL**, a university research lab, where I help build **PETI 2027**: a full-stack Django platform with a 6-person team
 - 🧠 Alum of **NES** (Novo Ensino Suplementar), a free academic-excellence extension program for top-performing high schoolers, where I studied AI, Neural Networks, Linear Algebra & Calculus before university
 - 🏆 **OBMEP** medalist: Silver National + Gold Regional in 2024 and 2025, Honorable Mention National in 2023. Also Silver medalist at **OAM**
 - 🌍 Exchange student alumnus, *"Daqui Pra o Mundo"* program (England)
