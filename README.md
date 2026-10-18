@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=Pedro%20Neves&fontSize=70&fontAlignY=35&desc=Data%20Science%20%26%20AI%20Student%20@%20FGV%20|%20LED-UFAL%20Contributor%20%26%20Full-Stack%20Dev&descAlignY=55&descAlign=50" />
-</div>
-
 <p align="center">
   <em>18 years old, based in Brazil. I like building things people actually use, not just tutorial projects.</em>
 </p>
