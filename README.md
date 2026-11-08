@@ -1,5 +1,5 @@
 <p align="center">
-  <em>18 years old, based in Brazil. I like building things people actually use, not just tutorial projects.</em>
+  <em>18 years old, based in Brazil. I like building things.</em>
 </p>
 
 <p align="center">
