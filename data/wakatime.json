@@ -1,0 +1,26 @@
+{
+  "horas": 199,
+  "desde": "Oct 28 2024",
+  "linguagens": [
+    {
+      "nome": "Python",
+      "pct": 41.9
+    },
+    {
+      "nome": "HTML",
+      "pct": 32.5
+    },
+    {
+      "nome": "TypeScript",
+      "pct": 8.7
+    },
+    {
+      "nome": "JavaScript",
+      "pct": 2.9
+    },
+    {
+      "nome": "CSS",
+      "pct": 1.5
+    }
+  ]
+}

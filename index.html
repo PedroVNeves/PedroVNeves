@@ -1,781 +1,206 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Neves | Desenvolvedor Python · IA & NLP</title>
-    <meta name="description"
-        content="Pedro Neves, estudante de Ciência de Dados & IA na FGV EMAp. Desenvolvedor Python com experiência em NLP para o Tribunal de Contas do Estado, na plataforma PETI 2027 e no sistema Olimpo.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="CSS/style.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        heading: ['Space Grotesk', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'monospace'],
-                    },
-                    colors: {
-                        bg: '#08090c',
-                        surface: '#111319',
-                        surface2: '#161922',
-                        primary: '#c6ff4d',
-                        secondary: '#7c9cff',
-                        amber: '#ffb454',
-                        muted: '#99a1ae',
-                        faint: '#5c6270',
-                    }
-                }
-            }
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro Neves · Dados, IA e Python</title>
+<meta name="description" content="Pedro Neves, estudante de Ciência de Dados &amp; IA na FGV EMAp e dev Python. Bolsista do LED-UFAL no piloto com a Hapvida e criador do medalhas.online.">
+<meta property="og:title" content="Pedro Neves · Dados, IA e Python">
+<meta property="og:description" content="Piloto com a Hapvida, medalhas.online, NLP no TCE-AL e pesquisa na FGV EMAp.">
+<meta property="og:image" content="https://pedrovneves.github.io/PedroVNeves/assets/profile.png">
+<meta property="og:url" content="https://pedrovneves.github.io/PedroVNeves/">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0c'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-weight='900' font-size='34' text-anchor='middle' fill='%23ff5b2e'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
 </head>
+<body>
+<div id="blob"></div><div id="cur"></div><div class="grain"></div>
+<nav class="syne"><a href="#">PEDRO NEVES</a><div class="r"><a class="mag" href="#destaques" data-i18n="k0">Destaques</a><a class="mag" href="#trabalho" data-i18n="k1">Trabalho</a><a class="mag" href="#pesquisa" data-i18n="k2">Pesquisa</a><a class="mag" href="#terminal">Terminal</a><a class="mag" href="#contato" data-i18n="k3">Contato</a><button class="lang mag" id="lang" aria-label="Switch language">EN</button></div></nav>
 
-<body class="bg-bg text-slate-100 font-sans antialiased">
+<main>
+  <!-- HERO -->
+  <section class="hero pad">
+    <h1 class="syne"><span class="w"><span>Pedro</span></span><br><span class="w"><span class="o">Neves</span></span><span class="w"><span>.</span></span></h1>
+    <div class="sub"><p data-i18n="k4">Dev Python e estudante de Ciência de Dados &amp; IA na FGV. Transformo dado bagunçado em coisa que funciona: no hospital, no tribunal, na sala de aula.</p><span class="scroll" data-i18n="k5"><i></i>role</span></div>
+  </section>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 transition-all duration-300 p-4" id="navbar">
-        <div class="glass rounded-2xl container mx-auto max-w-6xl px-5 py-3 flex justify-between items-center transition-colors duration-300">
-            <a href="#inicio" class="flex items-center gap-2 group">
-                <span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_#c6ff4d]"></span>
-                <span class="text-lg font-bold font-heading tracking-tight">Pedro Neves</span>
-            </a>
+  <div class="marq syne"><div>
+    <span>Python</span><em>✦</em><span>NLP</span><em>✦</em><span data-i18n="k6">Dados</span><em>✦</em><span>Django</span><em>✦</em><span>RAG</span><em>✦</em><span data-i18n="k7">Saúde</span><em>✦</em><span data-i18n="k8">Olimpíadas</span><em>✦</em>
+    <span>Python</span><em>✦</em><span>NLP</span><em>✦</em><span data-i18n="k6">Dados</span><em>✦</em><span>Django</span><em>✦</em><span>RAG</span><em>✦</em><span data-i18n="k7">Saúde</span><em>✦</em><span data-i18n="k8">Olimpíadas</span><em>✦</em>
+  </div></div>
 
-            <div class="hidden md:flex items-center gap-8">
-                <a href="#inicio" class="nav-link text-sm font-medium" key-language="home-nav">Início</a>
-                <a href="#sobre" class="nav-link text-sm font-medium" key-language="about-nav">Sobre</a>
-                <a href="#projetos" class="nav-link text-sm font-medium" key-language="projects-nav">Projetos</a>
-                <a href="#habilidades" class="nav-link text-sm font-medium" key-language="skills-nav">Habilidades</a>
-                <a href="#trajetoria" class="nav-link text-sm font-medium" key-language="path-nav">Trajetória</a>
-                <a href="#contato"
-                    class="btn-ghost !py-2 !px-4 text-sm magnetic" key-language="contact-nav">
-                    Contato
-                </a>
-                <div class="language-toggle" id="language-toggle">
-                    <div class="lang-option active" data-lang="pt">PT</div>
-                    <div class="lang-option" data-lang="en">EN</div>
-                </div>
-            </div>
+  <!-- DESTAQUES -->
+  <section class="feat pad" id="destaques">
+    <div class="sec-h rv"><h2 class="syne" data-i18n="k0">Destaques</h2><small data-i18n="k9">o que eu mais gosto de contar</small></div>
 
-            <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button" aria-label="Menu">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
+    <article class="f" style="--fc:var(--a)">
+      <div class="rv">
+        <span class="k" data-i18n="k10"><i class="pulse"></i>Agora · bolsa LED-UFAL</span>
+        <h2 data-i18n="k11">Quanto tempo alguém fica <em>internado?</em></h2>
+        <p data-i18n="k12">Num piloto com a <b>Hapvida</b>, estou ajudando a descobrir se dá para prever o tempo de internação de pacientes com síndrome coronariana. Este mês é de entender os dados, ler a literatura e desenhar o plano de 2027 junto com a equipe médica.</p>
+        <div class="nums"><div><b>5</b><span data-i18n="k13">pesquisadores</span></div><div><b data-i18n="k14">1 mês</b><span data-i18n="k15">estudo de viabilidade</span></div><div><b>2027</b><span data-i18n="k16">projeto completo</span></div></div>
+      </div>
+      <div class="fv rv"><div class="ecgbox"><div class="grid2"></div>
+        <svg class="ecg" viewBox="0 0 600 150" preserveAspectRatio="none"><path d="M0 85 H120 L140 85 L152 50 L166 130 L180 12 L196 105 L210 85 H330 L348 85 L360 55 L374 125 L388 20 L402 100 L416 85 H600"/></svg>
+        <div class="vit"><div data-i18n="k17">síndrome<b>coronariana</b></div><div data-i18n="k18">previsão<b>tempo de internação</b></div><div data-i18n="k19">fase<b>viabilidade</b></div></div>
+      </div></div>
+    </article>
 
-        <div class="md:hidden hidden absolute top-20 left-4 right-4 glass rounded-2xl p-6 flex flex-col gap-4"
-            id="mobile-menu">
-            <a href="#inicio" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="home-mobile-nav">Início</a>
-            <a href="#sobre" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="about-mobile-nav">Sobre</a>
-            <a href="#projetos" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="projects-mobile-nav">Projetos</a>
-            <a href="#habilidades" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="skills-mobile-nav">Habilidades</a>
-            <a href="#trajetoria" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="path-mobile-nav">Trajetória</a>
-            <a href="#contato" class="text-center py-2 hover:bg-white/5 rounded-lg transition" key-language="contact-mobile-nav">Contato</a>
-            <div class="flex justify-center mt-2">
-                <div class="language-toggle" id="language-toggle-mobile">
-                    <div class="lang-option active" data-lang="pt">PT</div>
-                    <div class="lang-option" data-lang="en">EN</div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <article class="f flip" style="--fc:var(--gold)">
+      <div class="rv">
+        <span class="k" data-i18n="k20"><i class="pulse"></i>Projeto pessoal · no ar</span>
+        <h2 data-i18n="k21">Todo medalhista do Brasil num <em>lugar só.</em></h2>
+        <p data-i18n="k22">Os resultados das olimpíadas científicas são públicos, mas espalhados em dezenas de sites e PDFs. O <b>medalhas.online</b> junta tudo, reconhece quando duas medalhas são da mesma pessoa sem precisar de CPF, e abre os dados numa API pública.</p>
+        <div class="nums"><div><b id="awards">854.456</b><span><span data-i18n="k23">premiações</span> <span class="live" id="liveTag"></span></span></div><div><b>23</b><span data-i18n="k24">olimpíadas</span></div><div><b>1979</b><span data-i18n="k25">até hoje</span></div></div>
+        <a class="cta" href="https://medalhas.online" data-i18n="k26">Abrir medalhas.online ↗</a>
+      </div>
+      <div class="fv rv"><a href="https://medalhas.online" class="shot"><img src="https://medalhas.online/og/site.png" alt="medalhas.online"></a></div>
+    </article>
 
-    <!-- Hero -->
-    <header id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 pb-20">
-        <canvas id="network-canvas" class="absolute inset-0 w-full h-full opacity-70"></canvas>
-        <div class="bg-grid absolute inset-0 w-full h-full pointer-events-none"></div>
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-bg/40 to-bg pointer-events-none"></div>
+    <article class="f" style="--fc:var(--c)">
+      <div class="rv">
+        <span class="k" data-i18n="k27"><i></i>Intercâmbio · Daqui Pra o Mundo</span>
+        <h2 data-i18n="k28">Brasil → <em>Inglaterra.</em></h2>
+        <p data-i18n="k29">Passei <b>um mês</b> na Inglaterra pelo programa <b>Daqui Pra o Mundo</b>, entre Londres e Brighton. Voltei com inglês <b>C1 certificado</b>.</p>
+        <div class="nums"><div><b data-i18n="k14">1 mês</b><span data-i18n="k30">na Inglaterra</span></div><div><b>C1</b><span data-i18n="k31">inglês certificado</span></div></div>
+      </div>
+      <div class="fv rv"><div class="trip">
+        <img src="assets/profile.png" alt="Pedro em Londres" data-alt-en="Pedro in London">
+        <div class="route"><span data-i18n="k32">Londres</span><span>Brighton</span></div>
+      </div></div>
+    </article>
+  </section>
 
-        <div class="container mx-auto max-w-4xl px-6 text-center relative z-10">
-            <div class="pill mx-auto mb-7" data-reveal>
-                <span class="pill-dot animate-pulse"></span>
-                <span key-language="hero-eyebrow">Atualmente: NLP no LED-UFAL</span>
-            </div>
+  <!-- BENTO -->
+  <section class="bento pad" style="padding-top:40px">
+    <div class="grid g3">
+      <div class="t c2 waka rv" id="waka">
+        <span class="label" data-i18n="k33">Horas de código · WakaTime</span>
+        <div class="wk-top"><div class="big" id="wkH">199<small>h</small></div><div class="wk-side"><span id="wkSince">desde out/2024</span><span data-i18n="k34">medidas pelo editor</span></div></div>
+        <div class="langs" id="wkL"></div>
+      </div>
+      <a class="t gh rv" href="https://github.com/PedroVNeves">
+        <span class="arrow" style="border-color:#0c0c0c33">→</span>
+        <span class="label" data-i18n="k35">Código</span>
+        <b>github.com/<br>PedroVNeves</b>
+      </a>
+      <div class="t stack rv" style="grid-column:1/-1">
+        <span class="label" data-i18n="k36">Com o que eu trabalho</span>
+        <div style="overflow:hidden"><div class="mq">
+          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>PyTorch</span><span>sentence-transformers</span><span>Django</span><span>PostgreSQL</span><span>BigQuery</span><span>Docker</span><span>Cloud Run</span>
+          <span>Python</span><span>pandas</span><span>scikit-learn</span><span>PyTorch</span><span>sentence-transformers</span><span>Django</span><span>PostgreSQL</span><span>BigQuery</span><span>Docker</span><span>Cloud Run</span>
+        </div></div>
+        <div style="overflow:hidden"><div class="mq rev">
+          <span>NLP</span><span>OCR</span><span>embeddings</span><span>RAG</span><span>Gemini</span><span data-i18n="k37">grafos</span><span>GeoPandas</span><span>APIs</span><span data-i18n="k38">testes</span><span>LGPD</span>
+          <span>NLP</span><span>OCR</span><span>embeddings</span><span>RAG</span><span>Gemini</span><span data-i18n="k37">grafos</span><span>GeoPandas</span><span>APIs</span><span data-i18n="k38">testes</span><span>LGPD</span>
+        </div></div>
+      </div>
+    </div>
+  </section>
 
-            <h1 class="text-5xl md:text-7xl font-bold font-heading mb-5 leading-[1.05]" data-reveal data-reveal-delay="80">
-                Pedro Neves
-            </h1>
+  <!-- TRABALHO -->
+  <section class="work pad" id="trabalho">
+    <div class="sec-h rv"><h2 class="syne" data-i18n="k39">Também trabalhei em</h2><small>2025 — 2026</small></div>
+    <ul class="list">
+      <li data-k="85k" data-v="páginas do Diário Oficial" data-ven="Official Gazette pages" data-c="#2ee6a6"><div class="row"><span class="n">01</span><div><h3 data-i18n="k40">Diário Oficial, <em>TCE-AL</em></h3><p data-i18n="k41">Bolsa LED-UFAL. NLP para o Tribunal de Contas de Alagoas: 10,5 mil atos de pessoal extraídos com OCR seletivo e 10 modelos de texto comparados para dizer se dois cargos são parecidos (melhor AUC 0,80).</p></div><span class="y">2026</span></div></li>
+      <li data-k="478" data-v="testes na suíte" data-ven="tests in the suite" data-c="#ff5b2e"><div class="row"><span class="n">02</span><div><h3>PETI <em>2027</em></h3><p data-i18n="k42">Bolsa LED-UFAL, equipe de 6. Plataforma Django das trilhas de olimpíada de matemática: permissões por papel e escopo, geração automática das aulas e +20 mil linhas minhas. Hoje sou consultor técnico do projeto.</p></div><span class="y">2026</span></div></li>
+      <li data-k="2" data-v="eventos atendidos" data-ven="events served" data-c="#b14bff"><div class="row"><span class="n">03</span><div><h3 data-i18n="k43"><em>Olimpo</em>, seleção do SigmaCamp</h3><p data-i18n="k44">Bolsa NES · SigmaCamp. Back-end da inscrição e seleção de estudantes do ETAPA SigmaCamp e do SigmaFestival Nordeste: formulários com Markdown/LaTeX, upload, e-mails, exportação e um suporte com RAG + Gemini.</p></div><span class="y">2026</span></div></li>
+      <li data-k="12k" data-v="livros catalogados" data-ven="books cataloged" data-c="#7aa2ff"><a class="row" href="https://github.com/PedroVNeves/lib_school"><span class="n">04</span><div><h3>lib<em>_school</em></h3><p data-i18n="k45">Sistema de biblioteca que fiz sozinho e doei à minha antiga escola pública: acervo de 12 mil livros, empréstimos por aluno e turma, atrasos e um jogo de leitura. Ficou quatro meses no ar.</p></div><span class="y">2026 ↗</span></a></li>
+      <li data-k="LP" data-v="landing page no ar" data-ven="landing page, live" data-c="#f2f0eb"><a class="row" href="https://sigmachallenge.com.br"><span class="n">05</span><div><h3><em>Sigma</em>Challenge</h3><p data-i18n="k46">Landing page de captação do SigmaChallenge, com animação das disciplinas e navegação desktop e mobile.</p></div><span class="y">2025 ↗</span></a></li>
+      <li data-k="29" data-v="commits no núcleo" data-ven="commits to the core" data-c="#f5c542"><div class="row"><span class="n">06</span><div><h3><em>Canguru</em></h3><p data-i18n="k47">Pesquisa do NES/UFAL: plataforma para capacitar profissionais de saúde e famílias no Método Canguru (cuidado de bebês prematuros). Fiz o núcleo em Django, o chatbot RAG e a migração para PostgreSQL.</p></div><span class="y">2025</span></div></li>
+    </ul>
+  </section>
 
-            <p class="text-2xl md:text-3xl font-heading font-medium text-slate-100 mb-6 leading-snug" data-reveal data-reveal-delay="140"
-                key-language="hero-headline">
-                Desenvolvedor <span class="text-gradient">Python, IA & NLP</span> e estudante de Ciência de Dados na FGV.
-            </p>
+  <!-- PESQUISA -->
+  <section class="res pad" id="pesquisa">
+    <div class="sec-h rv"><h2 class="syne" data-i18n="k2">Pesquisa</h2><small data-i18n="k48">trabalhos da FGV EMAp</small></div>
+    <div class="rgrid">
+      <article class="paper rv">
+        <span class="label" data-i18n="k49">Matemática Discreta · grafos</span>
+        <div class="q" data-i18n="k50">Quanto se perde trocando a busca exata pela intuição?</div>
+        <dl>
+          <dt data-i18n="k6">Dados</dt><dd data-i18n="k54">A Wikipédia em português como grafo: <b>1,2 milhão</b> de artigos e <b>80 milhões</b> de links.</dd>
+          <dt data-i18n="k51">Método</dt><dd data-i18n="k55">BFS bidirecional contra agentes "humanos", incluindo um A* guiado por embeddings, com provas de correção e otimalidade.</dd>
+          <dt data-i18n="k52">Achado</dt><dd data-i18n="k56">O A* semântico resolve 56% dos pares chegando a <b>1,04×</b> o caminho ótimo; a distância média entre artigos é 4,25.</dd>
+        </dl>
+        <div class="foot"><span data-i18n="k57">2026 · individual</span><a href="https://github.com/PedroVNeves/wikirace">wikirace ↗</a></div>
+      </article>
+      <article class="paper rv">
+        <span class="label" data-i18n="k58">Análise Exploratória de Dados</span>
+        <div class="q" data-i18n="k59">Quanta chuva, e onde, vira problema no Rio?</div>
+        <dl>
+          <dt data-i18n="k6">Dados</dt><dd data-i18n="k60"><b>29 milhões</b> de leituras de pluviômetros do Alerta Rio e ocorrências do COR, tiradas do BigQuery.</dd>
+          <dt data-i18n="k51">Método</dt><dd data-i18n="k61">Limpeza documentada (duplicatas, fusos, datas impossíveis) e cruzamento espacial com bairros e com o pluviômetro mais próximo, em UTM.</dd>
+          <dt data-i18n="k53">Foco</dt><dd data-i18n="k62">Por que a mesma chuva causa estragos diferentes em bairros diferentes; estudo de caso do temporal de abril de 2019.</dd>
+        </dl>
+        <div class="foot"><span data-i18n="k63">2026 · em dupla</span><a href="https://github.com/PedroVNeves/Quando_a_chuva_vira_problema">Quando a chuva vira problema ↗</a></div>
+      </article>
+    </div>
+  </section>
 
-            <p class="text-base md:text-lg text-muted mb-10 max-w-2xl mx-auto leading-relaxed" data-reveal data-reveal-delay="200"
-                key-language="hero-subtitle">
-                Hoje desenvolvo NLP para o Tribunal de Contas do Estado no LED-UFAL. Antes, construí a
-                plataforma acadêmica PETI 2027 e o sistema de inscrição Olimpo, e coloquei em produção a
-                biblioteca da minha antiga escola. Gosto de participar do processo inteiro, da modelagem de dados ao deploy.
-            </p>
+  <!-- SOBRE + MARCOS -->
+  <section class="about pad" id="sobre">
+    <div class="txt rv">
+      <div class="sec-h"><h2 class="syne" data-i18n="k64">Sobre</h2></div>
+      <p data-i18n="k65">Tenho 18 anos. Passei o ensino médio treinando para olimpíada de matemática, e isso ficou: começo pelo resultado que o problema precisa entregar e só depois decido o caminho.</p>
+      <p data-i18n="k66">Gosto de time pequeno, decisão documentada e código que dá para entender seis meses depois.</p>
+    </div>
+    <div class="rv">
+      <div class="sec-h"><h2 class="syne" data-i18n="k67">Marcos</h2></div>
+      <ul class="marcos">
+        <li><span data-i18n="k68">OBMEP · prata nacional</span><span>2024, 2025</span></li>
+        <li><span data-i18n="k69">OBMEP · ouro regional</span><span>2024, 2025</span></li>
+        <li><span data-i18n="k70">OBMEP · bronze nacional</span><span>2022</span></li>
+        <li><span data-i18n="k71">Ciência de Dados &amp; IA, FGV EMAp</span><span>2026 —</span></li>
+        <li><span data-i18n="k72">NES, extensão da UFAL</span><span>2024 — 25</span></li>
+        <li><span data-i18n="k73">Inglês C1 · intercâmbio na Inglaterra</span><span>—</span></li>
+      </ul>
+    </div>
+  </section>
 
-            <div class="flex flex-wrap justify-center gap-3 mb-10 font-mono text-xs" data-reveal data-reveal-delay="260">
-                <span class="pill"><i class="fas fa-briefcase text-primary"></i> <span class="stat-value" data-count="3">0</span>&nbsp;<span key-language="stat-apps">projetos com bolsa</span></span>
-                <span class="pill"><i class="fas fa-vial text-primary"></i> <span class="stat-value" data-count="478">0</span>&nbsp;<span key-language="stat-tests">testes na PETI 2027</span></span>
-                <span class="pill"><i class="fas fa-book text-primary"></i> <span class="stat-value" data-count="12" data-suffix="k">0</span>&nbsp;<span key-language="stat-commits">livros na lib_school</span></span>
-            </div>
+  <!-- TERMINAL -->
+  <section class="term-sec pad" id="terminal">
+    <div class="sec-h rv"><h2 class="syne" data-i18n="k74">Prefere o terminal?</h2><small data-i18n="k75">digite ou clique num comando</small></div>
+    <div class="win rv" id="win">
+      <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span class="tt">pedro@neves: ~ — zsh</span></div>
+      <div id="out"></div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </section>
 
-            <div class="flex flex-wrap justify-center gap-4 mb-12" data-reveal data-reveal-delay="320">
-                <a href="#projetos" class="btn-primary magnetic">
-                    <span key-language="hero-cta-projects">Ver projetos</span> <i class="fas fa-arrow-right text-xs"></i>
-                </a>
-                <a href="#contato" class="btn-ghost magnetic">
-                    <span key-language="hero-cta-contact">Falar comigo</span>
-                </a>
-            </div>
+  <!-- CONTATO -->
+  <section class="end pad" id="contato">
+    <h2 class="syne" data-i18n="k76">Bora<br><a href="mailto:pedro.vasconcelosneves@gmail.com">conversar?</a></h2>
+    <p class="end-sub" data-i18n="k80">Me chama por onde preferir.</p>
+    <div class="contacts">
+      <div class="cc mail" style="--cc:var(--a)">
+        <a class="cc-link" href="mailto:pedro.vasconcelosneves@gmail.com" aria-label="E-mail"></a>
+        <div class="cc-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="label">E-mail</span></div>
+        <b>pedro.vasconcelosneves<br>@gmail.com</b>
+        <button class="copy" id="copy" data-i18n="k78">Copiar e-mail</button>
+      </div>
+      <a class="cc" style="--cc:#0a66c2" href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank" rel="noopener">
+        <div class="cc-top"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span class="label">LinkedIn</span></div>
+        <b>/in/pedro-<br>vasconcelos-neves</b><span class="go">↗</span>
+      </a>
+      <a class="cc" style="--cc:#f2f0eb" href="https://github.com/PedroVNeves" target="_blank" rel="noopener">
+        <div class="cc-top"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg><span class="label">GitHub</span></div>
+        <b>/PedroVNeves</b><span class="go">↗</span>
+      </a>
+      <a class="cc" style="--cc:#e1306c" href="https://www.instagram.com/o_pedro.neves" target="_blank" rel="noopener">
+        <div class="cc-top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span class="label">Instagram</span></div>
+        <b>@o_pedro.neves</b><span class="go">↗</span>
+      </a>
+    </div>
+    <div class="row"><span data-i18n="k77">© 2026 · Maceió → São Paulo · feito à mão, sem framework</span><a class="mag" href="#">↑ <span data-i18n="k79">voltar ao topo</span></a></div>
+  </section>
+</main>
+<div class="pv" id="pv"><b id="pk"></b><span id="pvv"></span></div>
 
-            <div class="flex justify-center gap-4" data-reveal data-reveal-delay="380">
-                <a href="https://github.com/PedroVNeves" target="_blank" rel="noopener"
-                    class="w-11 h-11 flex items-center justify-center rounded-full glass hover:border-primary/40 transition-colors">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank" rel="noopener"
-                    class="w-11 h-11 flex items-center justify-center rounded-full glass hover:border-primary/40 transition-colors">
-                    <i class="fab fa-linkedin-in text-secondary"></i>
-                </a>
-                <a href="mailto:pedro.vasconcelosneves@gmail.com"
-                    class="w-11 h-11 flex items-center justify-center rounded-full glass hover:border-primary/40 transition-colors">
-                    <i class="fas fa-envelope text-amber"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float cursor-pointer text-faint hover:text-primary transition-colors"
-            id="scroll-down-button">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </header>
-
-    <main>
-        <!-- About -->
-        <section id="sobre" class="py-28 md:py-36 relative">
-            <div class="container mx-auto max-w-6xl px-6">
-                <div class="flex flex-col md:flex-row items-start gap-16">
-                    <div class="w-full md:w-1/3 flex justify-center md:sticky md:top-32" data-reveal="left">
-                        <div class="relative w-60 h-60 md:w-72 md:h-72">
-                            <div class="absolute -inset-3 rounded-[2rem] border border-primary/20"></div>
-                            <img src="assets/profile.png" alt="Pedro Neves"
-                                class="relative w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
-                            <div class="absolute -bottom-4 -right-4 glass px-4 py-2 rounded-xl animate-float" style="animation-delay:1s;">
-                                <span class="text-xs font-mono font-semibold" key-language="about-badge">🎓 FGV · Dados & IA</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full md:w-2/3">
-                        <span class="section-label" data-reveal>// sobre-mim</span>
-                        <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-8" data-reveal
-                            key-language="about-title">Sobre mim</h2>
-
-                        <div class="space-y-5 text-slate-300 leading-relaxed text-base md:text-lg" data-reveal data-reveal-delay="100">
-                            <p key-language="about-p1">
-                                Tenho 18 anos, estudo Ciência de Dados & Inteligência Artificial na FGV, e antes
-                                disso passei uns anos treinando pra olimpíadas de matemática. Isso ficou: hoje
-                                prefiro pensar num problema de trás pra frente, a partir do resultado que ele
-                                precisa entregar, e só depois decidir como chegar lá.
-                            </p>
-                            <p key-language="about-p2">
-                                No <strong class="text-white">LED-UFAL</strong>, laboratório de pesquisa da UFAL,
-                                trabalho com bolsa num projeto de NLP para o <strong class="text-white">Tribunal de
-                                Contas do Estado</strong>. Antes, fui desenvolvedor da <strong class="text-white">PETI
-                                2027</strong>, uma plataforma Django feita em equipe de 6 (onde hoje sou consultor), e
-                                do <strong class="text-white">Olimpo</strong>, o sistema de inscrição do SigmaCamp. Na
-                                FGV, meus projetos envolvem fine-tuning de modelos. Também construí sozinho, de graça,
-                                o sistema de biblioteca que roda hoje na minha antiga escola.
-                            </p>
-                            <p key-language="about-p3">
-                                Fora do código, sou medalhista da <strong class="text-white">OBMEP</strong> (2023,
-                                2024 e 2025) e da <strong class="text-white">OAM</strong>, fui intercambista pelo
-                                programa "Daqui Pra o Mundo" na Inglaterra, e falo inglês fluente (C1). Gosto de
-                                time pequeno, decisão documentada, e código que dá pra entender seis meses depois
-                                sem precisar perguntar pra quem escreveu.
-                            </p>
-                        </div>
-
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10" data-reveal data-reveal-delay="180">
-                            <div class="pill justify-center !text-slate-300"><i class="fas fa-rocket text-primary"></i> <span key-language="value-ship">Ship em produção</span></div>
-                            <div class="pill justify-center !text-slate-300"><i class="fas fa-vial text-primary"></i> <span key-language="value-test">Testo o que escrevo</span></div>
-                            <div class="pill justify-center !text-slate-300"><i class="fas fa-file-lines text-primary"></i> <span key-language="value-docs">Documento decisões</span></div>
-                            <div class="pill justify-center !text-slate-300"><i class="fas fa-people-group text-primary"></i> <span key-language="value-team">Trabalho bem em equipe</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projetos" class="py-28 md:py-36 relative bg-surface/20">
-            <div class="container mx-auto max-w-6xl px-6">
-                <div class="text-center mb-16" data-reveal>
-                    <span class="section-label">// projetos</span>
-                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="projects-title">
-                        Projetos em destaque</h2>
-                    <p class="text-muted max-w-xl mx-auto" key-language="projects-subtitle">
-                        Três trabalhos com bolsa, feitos em equipe com o LED-UFAL e o NES.
-                    </p>
-                </div>
-
-                <!-- Featured: Nomeações TCE -->
-                <div class="card card-tilt p-7 md:p-10 mb-8" data-reveal="scale">
-                    <div class="flex flex-col lg:flex-row gap-10">
-                        <div class="lg:w-7/12">
-                            <div class="flex flex-wrap items-center gap-2 mb-5">
-                                <span class="pill !text-primary !border-primary/30"><i class="fas fa-signal text-[10px]"></i> <span key-language="tce-tag-active">Em andamento · out 2026</span></span>
-                                <span class="pill"><i class="fas fa-building-columns text-[10px]"></i> LED-UFAL</span>
-                                <span class="pill"><i class="fas fa-scale-balanced text-[10px]"></i> <span key-language="tce-tag-client">Tribunal de Contas do Estado</span></span>
-                            </div>
-                            <h3 class="text-2xl md:text-3xl font-bold font-heading text-white mb-4" key-language="tce-title">Nomeações TCE</h3>
-                            <p class="text-slate-300 leading-relaxed mb-6" key-language="tce-description">
-                                Projeto de NLP com o Tribunal de Contas do Estado: dado o cargo atual de um servidor e
-                                o cargo para o qual ele está sendo nomeado, o sistema indica se o acúmulo de cargos é
-                                permitido ou vedado. Trabalho com bolsa numa equipe de 10 pessoas, da exploração da
-                                base de nomeações aos modelos de similaridade e classificação.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Python</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">NLP</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">scikit-learn</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">pandas</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Jupyter</span>
-                            </div>
-                            <p class="text-xs text-faint font-mono" key-language="tce-note">
-                                Projeto em andamento; o código do laboratório não é público.
-                            </p>
-                        </div>
-                        <div class="lg:w-5/12 flex flex-col gap-3 justify-center">
-                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
-                                <i class="fas fa-ruler-horizontal text-primary w-5"></i>
-                                <span class="text-sm text-slate-300" key-language="tce-feat-1">Distância de Levenshtein entre nomes de cargos</span>
-                            </div>
-                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
-                                <i class="fas fa-table-cells text-primary w-5"></i>
-                                <span class="text-sm text-slate-300" key-language="tce-feat-2">Vetorização de texto com Count Vectorizer e TF-IDF</span>
-                            </div>
-                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
-                                <i class="fas fa-compass text-primary w-5"></i>
-                                <span class="text-sm text-slate-300" key-language="tce-feat-3">Similaridade de cosseno entre descrições de cargos</span>
-                            </div>
-                            <div class="flex items-center gap-3 bg-surface2 border border-white/5 rounded-xl p-4">
-                                <i class="fas fa-scale-balanced text-primary w-5"></i>
-                                <span class="text-sm text-slate-300" key-language="tce-feat-4">Classificação supervisionada: permitida × vedada</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Featured: PETI 2027 -->
-                <div class="card card-tilt p-7 md:p-10 mb-8" data-reveal="scale" data-reveal-delay="80">
-                    <div class="flex flex-col lg:flex-row gap-10">
-                        <div class="lg:w-7/12">
-                            <div class="flex flex-wrap items-center gap-2 mb-5">
-                                <span class="pill !text-amber !border-amber/30"><i class="fas fa-lock text-[10px]"></i> <span key-language="peti-tag-private">Repositório privado</span></span>
-                                <span class="pill"><i class="fas fa-building-columns text-[10px]"></i> LED-UFAL</span>
-                                <span class="pill"><i class="fas fa-user-tie text-[10px]"></i> <span key-language="peti-tag-active">Consultor técnico desde out 2026</span></span>
-                            </div>
-                            <h3 class="text-2xl md:text-3xl font-bold font-heading text-white mb-4">PETI 2027</h3>
-                            <p class="text-slate-300 leading-relaxed mb-6" key-language="peti-description">
-                                Plataforma Django que organiza as trilhas anuais do PETI, o programa que prepara
-                                estudantes brasileiros para olimpíadas de matemática. Fui desenvolvedor com bolsa de
-                                julho a outubro de 2026: modelagem de dados, autorização em duas camadas (papel ×
-                                escopo), o motor que gera semanas e aulas automaticamente, trava otimista contra edição
-                                concorrente e limite de tentativas de login. Hoje atuo como consultor do projeto.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Python</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Django</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">PostgreSQL</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Tailwind</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">RBAC</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">TDD</span>
-                            </div>
-                            <p class="text-xs text-faint font-mono" key-language="peti-note">
-                                Código do laboratório não é público, mas os números ao lado saíram direto do histórico do git.
-                            </p>
-                        </div>
-
-                        <div class="lg:w-5/12 grid grid-cols-2 gap-3">
-                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
-                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="6">0</span></p>
-                                <p class="text-xs text-muted mt-1" key-language="peti-stat-apps">apps Django modulares</p>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
-                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="478">0</span></p>
-                                <p class="text-xs text-muted mt-1" key-language="peti-stat-tests">testes na suíte do projeto</p>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
-                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="29">0</span></p>
-                                <p class="text-xs text-muted mt-1" key-language="peti-stat-commits">commits pessoais</p>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
-                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="6">0</span></p>
-                                <p class="text-xs text-muted mt-1" key-language="peti-stat-team">pessoas na equipe</p>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
-                                <p class="stat-value text-2xl font-bold text-primary">+20,2k</p>
-                                <p class="text-xs text-muted mt-1" key-language="peti-stat-lines">linhas adicionadas</p>
-                            </div>
-                            <div class="bg-surface2 border border-white/5 rounded-2xl p-4">
-                                <p class="stat-value text-3xl font-bold text-primary"><span data-count="500">0</span></p>
-                                <p class="text-xs text-muted mt-1" key-language="peti-stat-users">usuários regulares estimados</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Featured: Olimpo / SigmaChallenge -->
-                <div class="card card-tilt p-7 md:p-10 mb-16" data-reveal="scale" data-reveal-delay="100">
-                    <div class="flex flex-col lg:flex-row gap-10">
-                        <div class="lg:w-7/12">
-                            <div class="flex flex-wrap items-center gap-2 mb-5">
-                                <span class="pill"><i class="fas fa-graduation-cap text-[10px]"></i> NES · SigmaCamp Brazil</span>
-                                <span class="pill"><i class="fas fa-calendar text-[10px]"></i> <span key-language="olimpo-tag-date">mai – jul 2026</span></span>
-                            </div>
-                            <h3 class="text-2xl md:text-3xl font-bold font-heading text-white mb-4">Olimpo · SigmaChallenge</h3>
-                            <p class="text-slate-300 leading-relaxed mb-6" key-language="olimpo-description">
-                                Plataforma de inscrição e seleção de estudantes para eventos de STEAM, como o ETAPA
-                                SigmaCamp e o SigmaFestival Nordeste. Como bolsista, desenvolvi o back-end de gestão
-                                dos inscritos e a landing page de captação do SigmaChallenge. Hoje o sistema se chama Olimpo.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">Python</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">TypeScript</span>
-                                <span class="px-3 py-1 rounded-full bg-white/5 text-slate-300 text-xs font-mono">APIs REST</span>
-                            </div>
-                            <a href="https://sigmachallenge.com.br" target="_blank" rel="noopener"
-                                class="text-primary text-sm font-semibold hover:underline flex items-center gap-2">
-                                <span key-language="project-visit-site">Acessar o site</span> <i class="fas fa-external-link-alt text-xs"></i>
-                            </a>
-                        </div>
-                        <div class="lg:w-5/12 flex items-center">
-                            <div class="overflow-hidden rounded-2xl border border-white/10 w-full">
-                                <img src="assets/SigmaChallengeLP.png" alt="SigmaChallenge"
-                                    class="w-full h-56 object-cover hover:scale-105 transition duration-500">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Other projects -->
-                <h3 class="text-xl font-bold font-heading text-white mb-8 flex items-center gap-3" data-reveal>
-                    <i class="fas fa-layer-group text-secondary"></i> <span key-language="other-projects-title">Outros projetos</span>
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card card-tilt p-6 flex flex-col" data-reveal>
-                        <div class="rounded-xl mb-5 border border-white/10 h-40 flex items-center justify-center bg-gradient-to-br from-primary/15 via-surface2 to-secondary/10">
-                            <i class="fas fa-book-open text-5xl text-primary/80"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading">lib_school</h4>
-                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="lib-description">
-                            Sistema que doei à biblioteca da E.E. Ovídio Edgar de Albuquerque, minha antiga escola:
-                            cerca de 12 mil livros, empréstimos, atrasos e relatórios. Em produção desde junho de 2026.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Django</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Docker</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Firebase</span>
-                        </div>
-                        <div class="flex flex-wrap gap-4 mt-auto">
-                            <a href="https://biblioteca-escolar-501619.web.app" target="_blank" rel="noopener"
-                                class="text-primary text-sm font-semibold hover:underline flex items-center gap-2">
-                                <span key-language="lib-cta-live">Acessar o sistema</span> <i class="fas fa-external-link-alt text-xs"></i>
-                            </a>
-                            <a href="https://github.com/PedroVNeves/lib_school" target="_blank" rel="noopener"
-                                class="text-slate-300 text-sm font-semibold hover:text-white flex items-center gap-2">
-                                <i class="fab fa-github"></i> <span key-language="lib-cta-code">Ver código</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="60">
-                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
-                            <img src="assets/canguru.jpeg" alt="Canguru"
-                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading">Canguru</h4>
-                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-canguru-description">
-                            Pesquisa do NES/UFAL: capacitação no Método Canguru para profissionais de saúde e famílias
-                            de prematuros em Alagoas, com um assistente baseado em RAG.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Django</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">RAG</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Docker</span>
-                        </div>
-                        <a href="https://github.com/novoensinosuplementar/canguru" target="_blank" rel="noopener"
-                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
-                            <span key-language="project-see-code">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="120">
-                        <div class="rounded-xl mb-5 border border-white/10 h-40 flex items-center justify-center bg-gradient-to-br from-secondary/15 via-surface2 to-amber/10">
-                            <i class="fas fa-calendar-check text-5xl text-secondary/80"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading">Ad Maiora</h4>
-                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-admaiora-description">
-                            Planner sob medida, web e mobile, com login JWT, Row-Level Security no PostgreSQL e
-                            sincronização offline entre site e app.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">TypeScript</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Expo</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Neon</span>
-                        </div>
-                    </div>
-
-                    <div class="card card-tilt p-6 flex flex-col" data-reveal>
-                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
-                            <img src="assets/RAG_LOCAL.png" alt="RAG Local"
-                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading">RAG Local</h4>
-                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-rag-description">
-                            Perguntas e respostas sobre documentos com Llama 3, LangChain e ChromaDB, rodando só em CPU.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">LangChain</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Ollama</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">ChromaDB</span>
-                        </div>
-                        <a href="https://github.com/PedroVNeves/RAG_Local" target="_blank" rel="noopener"
-                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
-                            <span key-language="project-see-code-2">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="60">
-                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
-                            <img src="assets/RealTimeEmotionDetection.png" alt="Realtime Emotion Detection"
-                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="project-emotion-title">Realtime Emotion Detection</h4>
-                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-emotion-description">
-                            CNN treinada para 7 emoções faciais, com 88% de acurácia no CK+, rodando em tempo real pela webcam.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">TensorFlow</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">OpenCV</span>
-                        </div>
-                        <a href="https://github.com/PedroVNeves/Realtime-Emotion-Detection" target="_blank" rel="noopener"
-                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
-                            <span key-language="project-see-code-3">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-
-                    <div class="card card-tilt p-6 flex flex-col" data-reveal data-reveal-delay="120">
-                        <div class="overflow-hidden rounded-xl mb-5 border border-white/10">
-                            <img src="assets/DaquiPraoMundoLP.png" alt="Daqui Pra o Mundo"
-                                class="w-full h-40 object-cover hover:scale-105 transition duration-500">
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="project-dpm-title">Projeto "Daqui Pra o Mundo"</h4>
-                        <p class="text-slate-400 mb-4 text-sm flex-grow" key-language="project-dpm-description">
-                            Site interativo para o programa de intercâmbio que me levou à Inglaterra.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">HTML/CSS</span>
-                            <span class="px-2 py-1 rounded-md bg-white/5 text-slate-300 text-xs font-mono">Tailwind</span>
-                        </div>
-                        <a href="https://github.com/PedroVNeves/LPDPM" target="_blank" rel="noopener"
-                            class="text-primary text-sm font-semibold hover:underline flex items-center gap-2 mt-auto">
-                            <span key-language="project-see-code-4">Ver código</span> <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="text-center mt-12" data-reveal>
-                    <a href="https://github.com/PedroVNeves" target="_blank" rel="noopener" class="btn-ghost magnetic inline-flex">
-                        <i class="fab fa-github"></i> <span key-language="see-more-github">Ver mais no GitHub</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="habilidades" class="py-28 md:py-36 relative">
-            <div class="container mx-auto max-w-6xl px-6">
-                <div class="text-center mb-16" data-reveal>
-                    <span class="section-label">// habilidades</span>
-                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="skills-title">
-                        Como eu trabalho</h2>
-                    <p class="text-muted max-w-xl mx-auto" key-language="skills-subtitle">
-                        Stack técnica que apliquei em projeto real, não em exercício de curso.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                    <div class="card p-7" data-reveal="left">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="skill-ring" data-p="90"><div class="skill-ring-inner">90%</div></div>
-                            <div>
-                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-backend">Backend & Dados</h3>
-                                <p class="text-xs text-muted" key-language="skill-cat-backend-sub">O que sustenta a PETI 2027, o Olimpo e a lib_school</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Python</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Django</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Node.js</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">SQL / PostgreSQL</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Neon / Supabase</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Docker</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Google Cloud</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Testes automatizados (TDD)</span>
-                        </div>
-                    </div>
-
-                    <div class="card p-7" data-reveal="right">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="skill-ring" data-p="80"><div class="skill-ring-inner">80%</div></div>
-                            <div>
-                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-frontend">Frontend & Mobile</h3>
-                                <p class="text-xs text-muted" key-language="skill-cat-frontend-sub">Do site ao app no celular</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">JavaScript / TypeScript</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">React Native / Expo</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">React</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Tailwind CSS</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">HTML / CSS</span>
-                        </div>
-                    </div>
-
-                    <div class="card p-7" data-reveal="left">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="skill-ring" data-p="75"><div class="skill-ring-inner">75%</div></div>
-                            <div>
-                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-ai">IA & Machine Learning</h3>
-                                <p class="text-xs text-muted" key-language="skill-cat-ai-sub">Do NLP no TCE ao fine-tuning de modelos</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">NLP</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">LLMs / RAG</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Fine-tuning</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">LangChain</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">TensorFlow</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">scikit-learn</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">OpenCV</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-data-analysis-tag">Ciência de dados</span>
-                        </div>
-                    </div>
-
-                    <div class="card p-7" data-reveal="right">
-                        <div class="flex items-center gap-4 mb-5">
-                            <div class="skill-ring" data-p="95"><div class="skill-ring-inner">95%</div></div>
-                            <div>
-                                <h3 class="font-bold text-white font-heading" key-language="skill-cat-collab">Colaboração & Comunicação</h3>
-                                <p class="text-xs text-muted" key-language="skill-cat-collab-sub">O que faz um time de 6 pessoas funcionar</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-english">Inglês (C1)</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono">Git / GitHub</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-docs">Documentação técnica</span>
-                            <span class="px-3 py-1.5 rounded-lg bg-white/5 text-slate-300 text-xs font-mono" key-language="skill-code-review">Code review</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-6 flex flex-col sm:flex-row items-center justify-between gap-4" data-reveal>
-                    <div class="flex items-center gap-3">
-                        <i class="fas fa-clock text-primary"></i>
-                        <span class="text-sm text-slate-300 font-mono" key-language="skill-time-coded">Tempo de código registrado</span>
-                    </div>
-                    <img src="https://wakatime.com/badge/user/cc389d26-71f3-4d80-915a-2c56372ee434.svg"
-                        alt="Total time coded since Oct 27 2024" class="rounded">
-                </div>
-            </div>
-        </section>
-
-        <!-- Trajectory / Timeline -->
-        <section id="trajetoria" class="py-28 md:py-36 relative bg-surface/20">
-            <div class="container mx-auto max-w-3xl px-6">
-                <div class="text-center mb-16" data-reveal>
-                    <span class="section-label">// trajetória</span>
-                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="path-title">
-                        Experiência, educação & conquistas</h2>
-                </div>
-
-                <div class="relative pl-12">
-                    <div class="timeline-line"></div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-graduation-cap text-primary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-1">2026 · atual</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-1">Ciência de Dados & IA, FGV EMAp</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-1">Bacharelado, cursando o 2º período.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="60">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-building-columns text-primary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-2">out 2026 · atual</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-2">LED-UFAL · Desenvolvedor de IA (bolsista)</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-2">Projeto de NLP sobre nomeações para o Tribunal de Contas do Estado.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="80">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-code text-primary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-peti">jul – out 2026</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-peti">LED-UFAL · Desenvolvedor full-stack (bolsista)</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-peti">PETI 2027, plataforma Django feita em equipe de 6. Consultor técnico desde out 2026.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="100">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-server text-primary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-olimpo">mai – jul 2026</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-olimpo">NES · SigmaCamp Brazil · Desenvolvedor back-end (bolsista)</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-olimpo">Plataforma de inscrição e seleção Olimpo / SigmaChallenge.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="120">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-brain text-primary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-3">NES · Módulo IV</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-3">Cálculo 3, Teoria dos Grafos, Redes Neurais</h4>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="140">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-diagram-project text-primary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-primary mb-1" key-language="tl-date-4">NES · Módulo III</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-4">IA, Álgebra Linear, Estrutura de Dados</h4>
-                            <a href="assets/NesMod-I-II.pdf" target="_blank" rel="noopener" class="text-xs text-primary hover:underline mt-2 inline-block" key-language="tl-link-4">Ver conteúdo dos módulos anteriores</a>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="150">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-trophy text-amber text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-amber mb-1">OBMEP 2025</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-obmep2025">Medalha de Prata (Nacional) e Ouro (Regional)</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-5">Olimpíada Brasileira de Matemática das Escolas Públicas.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="160">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-trophy text-amber text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-amber mb-1">OBMEP 2024</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-5">Medalha de Prata (Nacional) e Ouro (Regional)</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-5">Olimpíada Brasileira de Matemática das Escolas Públicas.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="180">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-award text-slate-300 text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-muted mb-1">OBMEP 2023</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-6">Menção Honrosa (Nacional)</h4>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="200">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-medal text-slate-300 text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-muted mb-1">OAM 2021</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-7">Medalha de Prata</h4>
-                            <p class="text-sm text-muted mt-1" key-language="tl-desc-7">Olimpíada Alagoana de Matemática.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5 pb-10" data-reveal="left" data-reveal-delay="220">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-plane text-secondary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-secondary mb-1" key-language="tl-date-8">Intercâmbio</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-8">Programa "Daqui Pra o Mundo" (Inglaterra)</h4>
-                        </div>
-                    </div>
-
-                    <div class="relative flex gap-5" data-reveal="left" data-reveal-delay="240">
-                        <div class="timeline-dot absolute -left-12"><i class="fas fa-language text-secondary text-sm"></i></div>
-                        <div class="card p-5 w-full">
-                            <p class="text-xs font-mono text-secondary mb-1" key-language="tl-date-9">Certificação</p>
-                            <h4 class="font-bold text-white font-heading" key-language="tl-title-9">Inglês Avançado (C1)</h4>
-                            <a href="assets/certificadoC1.pdf" target="_blank" rel="noopener" class="text-xs text-primary hover:underline mt-2 inline-block" key-language="tl-link-9">Ver certificado</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contato" class="py-28 md:py-36 relative">
-            <div class="container mx-auto max-w-5xl px-6">
-                <div class="text-center mb-16" data-reveal>
-                    <span class="section-label">// contato</span>
-                    <h2 class="text-3xl md:text-5xl font-bold font-heading text-white mt-3 mb-4" key-language="contact-title">
-                        Vamos conversar</h2>
-                    <p class="text-muted max-w-xl mx-auto" key-language="contact-subtitle">
-                        Me chama por qualquer um desses canais. Respondo rápido.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                    <a href="mailto:pedro.vasconcelosneves@gmail.com"
-                        class="card card-tilt p-8 text-center group" data-reveal data-reveal-delay="80">
-                        <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-5">
-                            <i class="fas fa-envelope text-xl text-primary"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="contact-email">Email</h4>
-                        <p class="text-muted text-sm break-all">pedro.vasconcelosneves@gmail.com</p>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/pedro-vasconcelos-neves" target="_blank" rel="noopener"
-                        class="card card-tilt p-8 text-center group" data-reveal data-reveal-delay="160">
-                        <div class="w-14 h-14 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-5">
-                            <i class="fab fa-linkedin-in text-xl text-secondary"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="contact-linkedin">LinkedIn</h4>
-                        <p class="text-muted text-sm" key-language="contact-linkedin-sub">Conecte-se comigo</p>
-                    </a>
-
-                    <a href="https://www.instagram.com/o_pedro.neves" target="_blank" rel="noopener"
-                        class="card card-tilt p-8 text-center group" data-reveal data-reveal-delay="240">
-                        <div class="w-14 h-14 bg-amber/10 rounded-full flex items-center justify-center mx-auto mb-5">
-                            <i class="fab fa-instagram text-xl text-amber"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-white mb-2 font-heading" key-language="contact-instagram">Instagram</h4>
-                        <p class="text-muted text-sm" key-language="contact-instagram-sub">Siga meu dia a dia</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-white/5 py-10">
-        <div class="container mx-auto max-w-6xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-primary"></span>
-                <span class="font-bold font-heading text-white">Pedro Neves</span>
-            </div>
-            <p class="text-faint text-xs font-mono" key-language="footer-copyright">© 2026 Pedro Neves.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/i18n.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
