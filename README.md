@@ -47,7 +47,6 @@ I'm 18 and study **Data Science & AI at FGV EMAp**. At **LED-UFAL**, a research 
 | **[Quando a chuva vira problema](https://github.com/PedroVNeves/Quando_a_chuva_vira_problema)** | 29M rain-gauge readings crossed with Rio's emergency-center incidents and neighborhoods (FGV, team of 2). |
 | **[RAG_Local](https://github.com/PedroVNeves/RAG_Local)** | Fully local RAG: Llama 3, LangChain and ChromaDB on a 6 GB GPU. |
 | **[Realtime Emotion Detection](https://github.com/PedroVNeves/Realtime-Emotion-Detection)** | CNN that classifies 7 facial emotions from the webcam (88% on CK+). |
-| **[Daqui Pra o Mundo](https://github.com/PedroVNeves/LPDPM)** | Landing page for the exchange program that sent me to England. |
 
 </details>
 
