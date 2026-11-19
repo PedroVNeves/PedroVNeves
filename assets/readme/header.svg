@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-label="Pedro Neves: Python, NLP, Data Science and AI">
+  <defs>
+    <radialGradient id="glowGold" cx="88%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#f5c542" stop-opacity=".30"/>
+      <stop offset=".45" stop-color="#f5c542" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#f5c542" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBlue" cx="0%" cy="100%" r="60%">
+      <stop offset="0" stop-color="#3b3fb0" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#3b3fb0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#ffffff" stroke-opacity=".045"/>
+    </pattern>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset=".55" stop-color="#f5c542"/>
+      <stop offset="1" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="900" height="270" rx="16"/></clipPath>
+    <clipPath id="disc"><circle cx="0" cy="0" r="54"/></clipPath>
+    <clipPath id="t0"><rect x="40" y="196" height="26" width="0"><animate attributeName="width" values="0;0;560;560;0;0" keyTimes="0;0.001;0.090;0.240;0.2401;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t1"><rect x="40" y="196" height="26" width="0"><animate attributeName="width" values="0;0;560;560;0;0" keyTimes="0;0.251;0.340;0.490;0.4901;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t2"><rect x="40" y="196" height="26" width="0"><animate attributeName="width" values="0;0;560;560;0;0" keyTimes="0;0.501;0.590;0.740;0.7401;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="t3"><rect x="40" y="196" height="26" width="0"><animate attributeName="width" values="0;0;560;560;0;0" keyTimes="0;0.751;0.840;0.990;0.9901;1" dur="16s" repeatCount="indefinite"/></rect></clipPath>
+    <style>
+      .sans{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}
+      .mono{font-family:Consolas,'SF Mono',Menlo,'Liberation Mono',monospace}
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="900" height="270" fill="#0a0e17"/>
+    <rect width="900" height="270" fill="url(#grid)"/>
+    <rect width="900" height="270" fill="url(#glowGold)"/>
+    <rect width="900" height="270" fill="url(#glowBlue)"/>
+
+    <!-- text block -->
+    <text x="40" y="58" class="sans" font-size="13" font-weight="700" letter-spacing="2.2" fill="#f5c542">DATA SCIENCE &amp; AI @ FGV EMAp · BRASIL</text>
+    <text x="38" y="122" class="sans" font-size="58" font-weight="800" fill="#f1f5f9" letter-spacing="-1">Pedro Neves</text>
+    <text x="40" y="160" class="sans" font-size="19" fill="#94a3b8">Python developer · NLP · I ship things people actually use</text>
+
+    <!-- terminal line -->
+    <rect x="30" y="190" width="590" height="38" rx="8" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".08"/>
+    <text x="44" y="215" class="mono" font-size="15" fill="#f5c542">❯</text>
+    <g class="mono" font-size="15" fill="#e2e8f0" transform="translate(20 0)">
+      <text x="44" y="215" clip-path="url(#t0)">building <tspan fill="#ffe08a">medalhas.online</tspan> · 850k+ olympiad awards</text>
+      <text x="44" y="215" clip-path="url(#t1)">predicting hospital length of stay · <tspan fill="#ffe08a">Hapvida</tspan> pilot</text>
+      <text x="44" y="215" clip-path="url(#t2)">graph search over <tspan fill="#ffe08a">1.2M</tspan> Wikipedia articles</text>
+      <text x="44" y="215" clip-path="url(#t3)">OBMEP medalist turned the medal database guy</text>
+    </g>
+
+    <!-- medal -->
+    <g transform="translate(760 0)">
+      <animateTransform attributeName="transform" type="translate" values="760 0;760 -7;760 0" dur="5s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>
+      <path d="M-34 20 L-10 104 L10 104 L-12 20 Z" fill="#dc2f45"/>
+      <path d="M34 20 L10 104 L-10 104 L12 20 Z" fill="#3b5bdb"/>
+      <path d="M-12 20 L12 20 L2 60 L-2 60 Z" fill="#f8fafc" opacity=".9"/>
+      <g transform="translate(0 160)">
+        <circle r="62" fill="#b8860b" opacity=".35"/>
+        <circle r="58" fill="url(#gold)"/>
+        <circle r="45" fill="none" stroke="#b8860b" stroke-width="3" opacity=".6"/>
+        <path d="M0 -26 L7.6 -8.2 L26.7 -8.2 L11.4 3.4 L17 21.6 L0 10.6 L-17 21.6 L-11.4 3.4 L-26.7 -8.2 L-7.6 -8.2 Z" fill="#fff7d6"/>
+        <g clip-path="url(#disc)">
+          <rect x="-150" y="-70" width="40" height="140" fill="url(#shine)" transform="skewX(-20)">
+            <animate attributeName="x" values="-150;-150;120" keyTimes="0;.6;1" dur="4s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+      </g>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="899" height="269" rx="15.5" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+</svg>
