@@ -1,22 +1,22 @@
 {
-  "horas": 203,
+  "horas": 204,
   "desde": "Oct 28 2024",
   "linguagens": [
     {
       "nome": "Python",
-      "pct": 41.5
+      "pct": 41.3
     },
     {
       "nome": "HTML",
-      "pct": 32.4
+      "pct": 32.3
     },
     {
       "nome": "TypeScript",
-      "pct": 8.6
+      "pct": 8.5
     },
     {
       "nome": "JavaScript",
-      "pct": 2.9
+      "pct": 2.8
     },
     {
       "nome": "CSS",
